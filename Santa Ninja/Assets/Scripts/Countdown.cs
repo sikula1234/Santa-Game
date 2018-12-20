@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Threading;
 
-public class Countdown : MonoBehaviour
+public class CountDown : MonoBehaviour
 {
     public int timeLeft = 60;
     public Text countdown;

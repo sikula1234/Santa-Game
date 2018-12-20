@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Darky : MonoBehaviour  {
 
-    public int darkyStart = 4;
+    public int giftsStart = 4;
+    public int actualNumberOfGifts = 4;
 
     // Start is called before the first frame update
     void Start()

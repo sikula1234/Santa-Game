@@ -10,15 +10,22 @@ public class Darky : MonoBehaviour  {
     public int actualNumberOfGifts;
     public Text giftsCounter;
 
-    // Start is called before the first frame update
-    void Start()
+	SceneTransitions sceneTransitions;
+
+	// Start is called before the first frame update
+	void Start()
     {
+		sceneTransitions = FindObjectOfType<SceneTransitions>();
 		actualNumberOfGifts = giftsStart;
 	}
 
     // Update is called once per frame
     void Update()
     {
-        giftsCounter.text = ("" + actualNumberOfGifts);        
+        giftsCounter.text = ("" + actualNumberOfGifts);
+		if(actualNumberOfGifts <= 0)
+		{
+			sceneTransitions.LoadScene("TestLevel", 2);
+		}
     }
 }

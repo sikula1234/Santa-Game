@@ -28,13 +28,17 @@ public class SceneTransitions : MonoBehaviour
 
 	IEnumerator LoadSceneCoroutine(string sceneName, int cislo)
 	{
-		switch(cislo)
+		// Nejspis bude potreba zpomalit/zastavit cas, aby se zamezilo glitchum!!! 
+		switch (cislo)
 		{
 			case 0: // Spotted
 				text.text = "You have been spotted!";
 				break;
 			case 1: // Time
 				text.text = "You ran out of time!";
+				break;
+			case 2: // Victory
+				text.text = "You have won!";
 				break;
 		}
 		transitionAnimator.SetTrigger("text");

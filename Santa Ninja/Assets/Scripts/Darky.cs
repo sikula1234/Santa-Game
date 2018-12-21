@@ -6,15 +6,15 @@ using System.Threading;
 
 public class Darky : MonoBehaviour  {
 
-    public int giftsStart = 4;
-    public int actualNumberOfGifts = 4;
+    public int giftsStart = 3;
+    public int actualNumberOfGifts;
     public Text giftsCounter;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+		actualNumberOfGifts = giftsStart;
+	}
 
     // Update is called once per frame
     void Update()

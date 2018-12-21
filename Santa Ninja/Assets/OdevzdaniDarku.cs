@@ -28,7 +28,7 @@ public class OdevzdaniDarku : MonoBehaviour
             image.color = tempColor;
 
             Darky darky = FindObjectOfType<Darky>();
-            darky.actualNumberOfGifts = darky.actualNumberOfGifts - 1;
+            darky.actualNumberOfGifts--;
 
             jeUzDarek = true;
         }

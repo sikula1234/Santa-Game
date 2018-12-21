@@ -7776,7 +7776,6 @@ GameObject:
   - component: {fileID: 1098984344}
   - component: {fileID: 1098984347}
   - component: {fileID: 1098984346}
-  - component: {fileID: 1098984345}
   m_Layer: 5
   m_Name: Fixed GiftsCounter
   m_TagString: Untagged
@@ -7803,21 +7802,6 @@ RectTransform:
   m_AnchoredPosition: {x: 200, y: 100}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1098984345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098984343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd357284736c8204d9f2290db04a2f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  giftsStart: 4
-  actualNumberOfGifts: 4
-  giftsCounter: {fileID: 1098984346}
 --- !u!114 &1098984346
 MonoBehaviour:
   m_ObjectHideFlags: 0

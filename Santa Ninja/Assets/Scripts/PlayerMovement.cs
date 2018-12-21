@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -17,5 +18,13 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		santaRigidBody.velocity = new Vector2(joystick.Horizontal * movementSpeed, joystick.Vertical * movementSpeed);
-	}
+
+        //rotation
+        Vector2 moveVector = new Vector2(joystick.Horizontal, joystick.Vertical);
+        Vector3 lookVector = new Vector3(joystick.Horizontal, joystick.Vertical, 4000);
+        transform.rotation = Quaternion.LookRotation(lookVector, Vector3.back);
+        transform.Translate(moveVector * Time.deltaTime * movementSpeed, Space.World);
+
+
+    }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Santa : MonoBehaviour {
@@ -19,5 +18,6 @@ public class Santa : MonoBehaviour {
 	public void Die()
 	{
 		Debug.Log("Dead :D");
+		SceneManager.LoadScene("TestLevel", LoadSceneMode.Single);
 	}
 }

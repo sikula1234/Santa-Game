@@ -8,10 +8,14 @@ public class Countdown : MonoBehaviour
 {
     public int timeLeft = 60;
     public Text countdown;
-    // Start is called before the first frame update
-    void Start()
+	SceneTransitions sceneTransitions;
+
+	// Start is called before the first frame update
+	void Start()
     {
-        StartCoroutine("LoseTime");
+		sceneTransitions = FindObjectOfType<SceneTransitions>();
+
+		StartCoroutine("LoseTime");
         Time.timeScale = 1;
     }
 
@@ -23,10 +27,11 @@ public class Countdown : MonoBehaviour
 
     IEnumerator LoseTime()
     {
-        while (true)
+        while (timeLeft > 0)
         {
             yield return new WaitForSeconds(1);
             timeLeft--;
         }
-    }
+		sceneTransitions.LoadScene("TestLevel", 1);
+	}
 }

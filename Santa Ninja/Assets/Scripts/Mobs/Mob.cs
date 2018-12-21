@@ -6,6 +6,7 @@ public class Mob : MonoBehaviour {
 
 	public float movementSpeed = 3f;
 	public PathPoint[] pathPoints;
+	public Transform spriteRendererTransform;
 
 	Rigidbody2D mobRigidbody;
 	private bool moveMob;
@@ -54,6 +55,9 @@ public class Mob : MonoBehaviour {
 			index++;
 			moveMob = true;
 			viewpoint.LookAtTarget(pathPoints[index].position);
+			//obstarava rotaci sprite rendereru moba podle smeru chuze
+			spriteRendererTransform.right = new Vector3(pathPoints[index].position.x, pathPoints[index].position.y, 0) - spriteRendererTransform.parent.position;
+			spriteRendererTransform.Rotate(0, 0, -90);
 		}
 
 	}

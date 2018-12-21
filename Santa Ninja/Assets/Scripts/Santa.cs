@@ -1,13 +1,12 @@
-﻿using UnityEngine.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Santa : MonoBehaviour {
 
-
+	SceneTransitions sceneTransitions;
 
 	// Use this for initialization
 	void Start () {
-		
+		sceneTransitions = FindObjectOfType<SceneTransitions>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +17,6 @@ public class Santa : MonoBehaviour {
 	public void Die()
 	{
 		Debug.Log("Dead :D");
-		SceneManager.LoadScene("TestLevel", LoadSceneMode.Single);
+		sceneTransitions.LoadScene("TestLevel");
 	}
 }

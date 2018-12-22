@@ -11,14 +11,11 @@ public class Mob : MonoBehaviour {
 	Rigidbody2D mobRigidbody;
 	private bool moveMob;
 	private int index;
-	private Viewpoint viewpoint;
 
 	// Use this for initialization
 	void Start () {
 		transform.position = pathPoints[0].position;
 		StartCoroutine(WaitOnPoint());
-
-		viewpoint = transform.GetComponentInChildren<Viewpoint>();
 	}
 	
 	// Update is called once per frame
@@ -54,10 +51,9 @@ public class Mob : MonoBehaviour {
 		} else {
 			index++;
 			moveMob = true;
-			viewpoint.LookAtTarget(pathPoints[index].position);
-			//obstarava rotaci sprite rendereru moba podle smeru chuze
-			spriteRendererTransform.right = new Vector3(pathPoints[index].position.x, pathPoints[index].position.y, 0) - spriteRendererTransform.parent.position;
-			spriteRendererTransform.Rotate(0, 0, -90);
+
+			//obstarava rotaci celeho moba (fov i sprite renderer)
+			transform.right = new Vector3(pathPoints[index].position.x, pathPoints[index].position.y, 0) - spriteRendererTransform.parent.position;
 		}
 
 	}

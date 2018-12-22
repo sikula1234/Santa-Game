@@ -16,7 +16,6 @@ public class Santa : MonoBehaviour {
 
 	public void Die()
 	{
-		Debug.Log("Dead :D");
 		sceneTransitions.LoadScene("TestLevel", 0);
 	}
 }

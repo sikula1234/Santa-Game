@@ -1163,6 +1163,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7608233884614920493, guid: da1e70431987c1845b188499a2eb7b4f,
+        type: 3}
+      propertyPath: viewAngle
+      value: 114
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1e70431987c1845b188499a2eb7b4f, type: 3}
 --- !u!1001 &998891999
@@ -8336,7 +8341,7 @@ GameObject:
   - component: {fileID: 1751483080}
   - component: {fileID: 1751483079}
   - component: {fileID: 1751483081}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tilemap_Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -74,6 +74,11 @@ public class NewLevelGen : MonoBehaviour
 
 			if(DiscoverRooms())
 			{
+				SetRoomTypes(rooms);
+				for (int i = 0; i < rooms.Length; i++)
+				{
+					rooms[i].GenerateRoom();
+				}
 				stopRoomGeneration = true;
 			}
 		} else
@@ -249,6 +254,47 @@ public class NewLevelGen : MonoBehaviour
 		}
 
 		return randomPosition;
+	}
+
+	private void SetRoomTypes(Room[] rooms)
+	{
+		for (int i = 0; i < rooms.Length; i++)
+		{
+			Vector2 roomPos = rooms[i].position;
+			int roomEntranceCounter = 0;
+
+			if (roomPos.y + 2 <= 6)
+			{
+				if (array[(int)roomPos.x, (int)roomPos.y + 1].GetComponent<Entrance>().isOpen)
+				{
+					roomEntranceCounter += 9;
+				}
+			}
+			if (roomPos.y - 2 >= 0)
+			{
+				if (array[(int)roomPos.x, (int)roomPos.y - 1].GetComponent<Entrance>().isOpen)
+				{
+					roomEntranceCounter += 1;
+				}
+			}
+			if (roomPos.x + 2 <= 6)
+			{
+				if (array[(int)roomPos.x + 1, (int)roomPos.y].GetComponent<Entrance>().isOpen)
+				{
+					roomEntranceCounter += 4;
+				}
+			}
+			if (roomPos.x - 2 >= 0)
+			{
+				if (array[(int)roomPos.x - 1, (int)roomPos.y].GetComponent<Entrance>().isOpen)
+				{
+					roomEntranceCounter += 16;
+				}
+			}
+
+
+			rooms[i].SetRoomEntrances(roomEntranceCounter);
+		}
 	}
 
 	//Vytvori 2D array transformu, vyplni rooms a nastavi kazde Room pozici

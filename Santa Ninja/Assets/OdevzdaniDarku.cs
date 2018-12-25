@@ -6,7 +6,6 @@ public class OdevzdaniDarku : MonoBehaviour
 {
 
     public bool jeUzDarek = false;
-    public int pocetDarku = 4;
     
     // Start is called before the first frame update
     void Start()

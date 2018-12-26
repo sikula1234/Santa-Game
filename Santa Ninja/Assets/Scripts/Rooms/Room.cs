@@ -68,6 +68,7 @@ public class Room : MonoBehaviour
 		GameObject interiorPrefab = Instantiate(randomInteriorPrefab);
 		interiorPrefab.transform.parent = gameObject.transform;
 		interiorPrefab.transform.localPosition = new Vector3(0, 0, 0);
+		RotateInterior(interiorPrefab);
 
 		RandomizeTextures();
 	}
@@ -93,5 +94,57 @@ public class Room : MonoBehaviour
 		else if (cislo == 30)
 			roomEntranceType = roomEntranceTypes.XEntrance;
 		else roomEntranceType = roomEntranceTypes.Default;
+	}
+
+	public void RotateInterior(GameObject gameObject)
+	{
+		switch(roomEntrance)
+		{
+			case roomEntrances.T:
+
+				break;
+			case roomEntrances.R:
+				gameObject.transform.Rotate(new Vector3(0, 0, -90));
+				break;
+			case roomEntrances.B:
+				gameObject.transform.Rotate(new Vector3(0, 0, -180));
+				break;
+			case roomEntrances.L:
+				gameObject.transform.Rotate(new Vector3(0, 0, -270));
+				break;
+			case roomEntrances.TB:
+				gameObject.transform.Rotate(new Vector3(0, 0, -90));
+				break;
+			case roomEntrances.RL:
+
+				break;
+			case roomEntrances.LTR:
+
+				break;
+			case roomEntrances.TRB:
+				gameObject.transform.Rotate(new Vector3(0, 0, -90));
+				break;
+			case roomEntrances.RBL:
+				gameObject.transform.Rotate(new Vector3(0, 0, -180));
+				break;
+			case roomEntrances.BLT:
+				gameObject.transform.Rotate(new Vector3(0, 0, -270));
+				break;
+			case roomEntrances.X:
+
+				break;
+			case roomEntrances.TR:
+
+				break;
+			case roomEntrances.RB:
+				gameObject.transform.Rotate(new Vector3(0, 0, -90));
+				break;
+			case roomEntrances.BL:
+				gameObject.transform.Rotate(new Vector3(0, 0, -180));
+				break;
+			case roomEntrances.LT:
+				gameObject.transform.Rotate(new Vector3(0, 0, -270));
+				break;
+		}
 	}
 }

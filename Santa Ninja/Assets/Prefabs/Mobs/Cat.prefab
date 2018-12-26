@@ -93,8 +93,8 @@ GameObject:
   - component: {fileID: 114257280297934452}
   - component: {fileID: 7608233884614920493}
   m_Layer: 0
-  m_Name: Mob
-  m_TagString: Untagged
+  m_Name: Cat
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

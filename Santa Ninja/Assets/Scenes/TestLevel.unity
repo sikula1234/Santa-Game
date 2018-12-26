@@ -12951,7 +12951,7 @@ PrefabInstance:
     - target: {fileID: 114085627530317000, guid: dbda2be2150b66b43bef7de9810d3c05,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114085627530317000, guid: dbda2be2150b66b43bef7de9810d3c05,
         type: 3}
@@ -12973,14 +12973,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096912853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6922f1f8261b79c48aa580e3c764b2a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2.5
-  flipRot: 1
-  lastLook: {x: 0, y: 0, z: 4000}
 --- !u!1 &2117553525
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class NewPlayerMovement : MonoBehaviour
     Joystick joystick;
     Rigidbody2D santaRigidBody;
     public bool flipRot = true;
+    public Vector3 lastLook = new Vector3(0, 0, 4000);
 
     // Use this for initialization
     void Start()
@@ -25,14 +26,16 @@ public class NewPlayerMovement : MonoBehaviour
         //rotation of the player transform
         Vector2 moveVector = new Vector2(joystick.Horizontal, joystick.Vertical);
         Vector3 lookVector = new Vector3(joystick.Horizontal, joystick.Vertical, 4000);
+        
+
+        if (lookVector == new Vector3(0, 0, 4000))
+        {
+            lookVector = lastLook;
+        }
+
         transform.rotation = Quaternion.LookRotation(lookVector, Vector3.back);
         transform.Translate(moveVector * Time.deltaTime * movementSpeed, Space.World);
+
+        lastLook = lookVector;
     }
-
-    void LastUpdate()
-    {
-
-    }
-    
-
 }

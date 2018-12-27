@@ -51,3 +51,4 @@ MonoBehaviour:
   - {fileID: 1584902157378990, guid: da1e70431987c1845b188499a2eb7b4f, type: 3}
   - {fileID: 1584902157378990, guid: 9e7ddb97f4d9c804c92c6e59fee55318, type: 3}
   mobs: []
+  spawnCoordinates: []

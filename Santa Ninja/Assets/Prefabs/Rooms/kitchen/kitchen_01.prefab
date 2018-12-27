@@ -102,8 +102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d8349730d46d7489c906e111546e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportedEntranceTypes: 01000000020000000300000004000000
   roomType: 5
+  topEntrance: 1
+  rightEntrance: 1
+  bottomEntrance: 1
+  leftEntrance: 1
 --- !u!1 &8913996744499439222
 GameObject:
   m_ObjectHideFlags: 0

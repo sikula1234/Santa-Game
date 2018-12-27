@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gift
   - Mob
+  - Pathpoint
   layers:
   - Default
   - TransparentFX

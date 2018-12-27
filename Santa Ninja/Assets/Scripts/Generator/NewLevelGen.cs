@@ -57,7 +57,6 @@ public class NewLevelGen : MonoBehaviour
 		if (timeBtwRoom <= 0 && stopGeneration == false)
 		{
 			Move();
-			Debug.Log("Moving");
 			timeBtwRoom = startTimeBtwRoom;
 		}
 		else if(timeBtwRoom <= 0 && stopRoomGeneration == false)
@@ -130,7 +129,6 @@ public class NewLevelGen : MonoBehaviour
 
 			if (genPos.y < maxY)
 			{
-				Debug.Log("Moved down");
 				MoveGen(0, moveAmount, true); 
 				direction = Random.Range(1, 6);
 			}

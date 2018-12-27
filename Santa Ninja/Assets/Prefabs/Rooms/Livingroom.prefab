@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
   m_Layer: 0
-  m_Name: RoomPrefab 2
+  m_Name: Livingroom
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -88,8 +88,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d8349730d46d7489c906e111546e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  supportedEntranceTypes: 0100000002000000030000000400000005000000
   roomType: 3
+  topEntrance: 1
+  rightEntrance: 1
+  bottomEntrance: 1
+  leftEntrance: 1
 --- !u!1 &8913996744499439222
 GameObject:
   m_ObjectHideFlags: 0

@@ -105,7 +105,7 @@ MonoBehaviour:
   roomType: 5
   topEntrance: 1
   rightEntrance: 1
-  bottomEntrance: 1
+  bottomEntrance: 0
   leftEntrance: 1
 --- !u!1 &8913996744499439222
 GameObject:

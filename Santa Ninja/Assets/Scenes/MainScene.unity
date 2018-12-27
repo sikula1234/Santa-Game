@@ -4277,12 +4277,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1952423393}
   m_PrefabAsset: {fileID: 0}
---- !u!1839735485 &1964058513 stripped
-Tilemap:
-  m_CorrespondingSourceObject: {fileID: 3693367688466569150, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-    type: 3}
-  m_PrefabInstance: {fileID: 1203946076300361404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1990471865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,88 +4522,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: tilemap
-      value: 
-      objectReference: {fileID: 1964058513}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 49e0a28a10100d54ab2a8d71c5c82e36,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[6]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 1b2a6ad9e83063f4294fd8edd2e5cf56,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[7]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 27cc91ba2825dcd4994b276635bb680b,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[8]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 81277b6dde2ff7e46ad35d78a366705e,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[9]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: b97ab808046bb214a85194deab294c57,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[10]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 49e0a28a10100d54ab2a8d71c5c82e36,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[11]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 1b2a6ad9e83063f4294fd8edd2e5cf56,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[12]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 27cc91ba2825dcd4994b276635bb680b,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 7b3bfb15458b8dd45a88c328bddeea15,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 1961cbc1ae2d862448e0802e2b43cb0f,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: 81277b6dde2ff7e46ad35d78a366705e,
-        type: 3}
-    - target: {fileID: 7684659914820692804, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: roomInteriorPrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 8229370432124177791, guid: b97ab808046bb214a85194deab294c57,
-        type: 3}
     - target: {fileID: 4557913582528027727, guid: 7c063dec54c2b9049b95e28fd3dcff89,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

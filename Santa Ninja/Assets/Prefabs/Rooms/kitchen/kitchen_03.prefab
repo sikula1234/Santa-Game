@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomType: 5
-  topEntrance: 1
+  topEntrance: 0
   rightEntrance: 1
-  bottomEntrance: 1
+  bottomEntrance: 0
   leftEntrance: 1
 --- !u!1 &8913996744499439222
 GameObject:

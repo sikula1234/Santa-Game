@@ -19,7 +19,7 @@ public class Room : MonoBehaviour
 
 	public enum roomTypes
 	{
-		Default, diningRoom, bathRoom, livingRoom, hall, kitchen
+		Default, bedRoom, bathRoom, livingRoom, hall, kitchen
 	} // Typy mistnosti
 
 	public enum roomEntrances // Combinations of entrances: combination = n1 + n2 + n3 + n4

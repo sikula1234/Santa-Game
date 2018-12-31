@@ -9,6 +9,7 @@ public class MobSpawner : MonoBehaviour
     public List<Vector2> spawnCoordinates = new List<Vector2>();
     bool JeCasNaMoby = true;
     public int pocetMobu = 6;
+    public LayerMask layer;
 
     // Start is called before the first frame update
     void Start()
@@ -52,11 +53,11 @@ public class MobSpawner : MonoBehaviour
     {
         for (int i = 0; i < usedCoordinates.Count; i++)
         {
-            if ((Mathf.Abs(coordinate.x - usedCoordinates[i].x) > 3 && Mathf.Abs(coordinate.y - usedCoordinates[i].y) > 3)
-                && !Physics.Raycast(coordinate, Vector3.up, 2)
-                && !Physics.Raycast(coordinate, Vector3.down, 2)
-                && !Physics.Raycast(coordinate, Vector3.left, 2)
-                && !Physics.Raycast(coordinate, Vector3.right, 2))
+            if ((Mathf.Abs(coordinate.x - usedCoordinates[i].x) > 2.5f && Mathf.Abs(coordinate.y - usedCoordinates[i].y) > 2.5f)
+                && !Physics2D.Raycast(coordinate, Vector3.up, 1, layer)
+                && !Physics2D.Raycast(coordinate, Vector3.down, 1, layer)
+                && !Physics2D.Raycast(coordinate, Vector3.left, 1, layer)
+                && !Physics2D.Raycast(coordinate, Vector3.right, 1, layer))
             {
                 continue;
             }

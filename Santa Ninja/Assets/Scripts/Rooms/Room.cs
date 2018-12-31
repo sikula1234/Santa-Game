@@ -17,6 +17,8 @@ public class Room : MonoBehaviour
 
 	public GameObject[] roomInteriorPrefabs;
 
+	GameObject interiorPrefab;
+
 	public enum roomTypes
 	{
 		Default, bedRoom, bathRoom, livingRoom, hall, kitchen
@@ -66,7 +68,7 @@ public class Room : MonoBehaviour
 		GameObject randomInteriorPrefab = suitableInteriorPrefabs[(int)Random.Range(0, suitableInteriorPrefabs.Count())]; // odebrano -1
 
 		//Spawne interior
-		GameObject interiorPrefab = Instantiate(randomInteriorPrefab);
+		interiorPrefab = Instantiate(randomInteriorPrefab);
 		interiorPrefab.transform.parent = gameObject.transform;
 		interiorPrefab.transform.localPosition = new Vector3(0, 0, 0);
 		interiorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
@@ -89,4 +91,15 @@ public class Room : MonoBehaviour
 			roomEntranceType = roomEntranceTypes.XEntrance;
 		else roomEntranceType = roomEntranceTypes.Default;
 	}	
+
+	// Pro SpawnRoomGen
+	public void SetRoomInterior(GameObject newInteriorPrefab, GameObject santaPrefab)
+	{
+		Destroy(interiorPrefab);
+		newInteriorPrefab = Instantiate(newInteriorPrefab);
+		newInteriorPrefab.transform.parent = gameObject.transform;
+		newInteriorPrefab.transform.localPosition = new Vector3(0, 0, 0);
+		//newInteriorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
+		newInteriorPrefab.GetComponent<SpawnRoom>().SpawnSanta(santaPrefab);
+	}
 }

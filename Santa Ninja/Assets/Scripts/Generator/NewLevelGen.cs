@@ -28,7 +28,7 @@ public class NewLevelGen : MonoBehaviour
 	public Transform[] roomTransforms;
 	Vector2 genPos;
 	Vector2 entrPos;
-	Transform[,] array;
+	public Transform[,] array;
 	Room[] rooms = new Room[16];
 
 	void Awake()
@@ -79,6 +79,11 @@ public class NewLevelGen : MonoBehaviour
 					rooms[i].GenerateRoom();
 				}
 				stopRoomGeneration = true;
+
+				// Spawne Spawn Room a Santu
+				transform.GetComponent<SpawnRoomGen>().SpawnRandomRoom();
+				// Startne timer ve hre
+				FindObjectOfType<Countdown>().StartTimer();
 			}
 		} else
 		{

@@ -14,9 +14,6 @@ public class Countdown : MonoBehaviour
 	void Start()
     {
 		sceneTransitions = FindObjectOfType<SceneTransitions>();
-
-		StartCoroutine("LoseTime");
-        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -33,5 +30,11 @@ public class Countdown : MonoBehaviour
             timeLeft--;
         }
 		sceneTransitions.LoadScene("TestLevel", 1);
+	}
+
+	public void StartTimer()
+	{
+		StartCoroutine("LoseTime");
+		Time.timeScale = 1;
 	}
 }

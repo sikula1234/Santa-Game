@@ -82,11 +82,12 @@ public class NewLevelGen : MonoBehaviour
 
 				// Spawne Spawn Room a Santu
 				transform.GetComponent<SpawnRoomGen>().SpawnRandomRoom();
+				// Spawne darky
+				FindObjectOfType<GiftSpawner>().SpawnGifts();
 				// Spawne moby
 				FindObjectOfType<MobSpawner>().SpawnMobs();
 				// Startne timer ve hre
-				FindObjectOfType<Countdown>().StartTimer();
-				
+				FindObjectOfType<Countdown>().StartTimer();				
 			}
 		} else
 		{

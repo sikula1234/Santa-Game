@@ -14,15 +14,15 @@ public class Mob : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		transform.position = pathPoints[0].position;
-		StartCoroutine(WaitOnPoint());
+		//transform.position = pathPoints[0].position; - Vypnuto pro testovani
+		//StartCoroutine(WaitOnPoint());- Vypnuto pro testovani
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
 		// Mob movement
-		if (moveMob) {	
+		/*if (moveMob) {	
 			//Jestli stoji mob na bode
 			if (transform.position.x == pathPoints[index].position.x && transform.position.y == pathPoints[index].position.y)
 			{
@@ -31,7 +31,7 @@ public class Mob : MonoBehaviour {
 			}
 
 			MoveMob();
-		}		
+		}	Vypnuto pro testovani*/	
 	}
 
 	

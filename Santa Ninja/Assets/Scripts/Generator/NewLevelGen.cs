@@ -78,12 +78,15 @@ public class NewLevelGen : MonoBehaviour
 				{
 					rooms[i].GenerateRoom();
 				}
-				stopRoomGeneration = true;
+				stopRoomGeneration = true;				
 
 				// Spawne Spawn Room a Santu
 				transform.GetComponent<SpawnRoomGen>().SpawnRandomRoom();
+				// Spawne moby
+				FindObjectOfType<MobSpawner>().SpawnMobs();
 				// Startne timer ve hre
 				FindObjectOfType<Countdown>().StartTimer();
+				
 			}
 		} else
 		{

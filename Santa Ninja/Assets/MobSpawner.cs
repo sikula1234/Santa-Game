@@ -7,30 +7,29 @@ public class MobSpawner : MonoBehaviour
     public GameObject[] mobPrefabs;
     public GameObject[] mobs;
     public List<Vector2> spawnCoordinates = new List<Vector2>();
-    bool JeCasNaMoby = true;
     public int pocetMobu = 6;
     public LayerMask layer;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        GenerateCoordinates();
-       /* for (int i = 0; i < spawnCoordinates.Length; i++)
-        {
-            spawnCoordinates[i] = new Vector2(40f, 40f);
+	// Is called by LevelGen after level generation is complete
+	public void SpawnMobs()
+	{
+		GenerateCoordinates();
 
-        }*/
-        mobs = new GameObject[pocetMobu]; //makes sure they match length
-        for (int i = 0; i < mobs.Length; i++)
-        {
-            int rand = Random.Range(0, mobPrefabs.Length);
-            mobs[i] = Instantiate(mobPrefabs[rand]) as GameObject;
+		mobs = new GameObject[pocetMobu]; //makes sure they match length
+		for (int i = 0; i < mobs.Length; i++)
+		{
+			int rand = Random.Range(0, mobPrefabs.Length);
+			mobs[i] = Instantiate(mobPrefabs[rand]) as GameObject;
 
-        }
+		}
 
-    }
-  
-    void GenerateCoordinates()
+		for (int i = 0; i < mobs.Length; i++)
+		{
+			mobs[i].transform.position = spawnCoordinates[i];
+		}
+	}
+
+	void GenerateCoordinates()
     {
         for (int i = 0; i < pocetMobu; i++)
         {
@@ -69,16 +68,5 @@ public class MobSpawner : MonoBehaviour
         return true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (JeCasNaMoby)
-        {
-            for (int i = 0; i < mobs.Length; i++)
-            {
-                mobs[i].transform.position = spawnCoordinates[i];
-            }
-            JeCasNaMoby = false;
-        }
-    }  
+
 }

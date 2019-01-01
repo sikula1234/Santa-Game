@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5851291617233154922}
   m_Layer: 0
   m_Name: GiftSpawnPoint
-  m_TagString: Untagged
+  m_TagString: GiftSpawnPoint
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

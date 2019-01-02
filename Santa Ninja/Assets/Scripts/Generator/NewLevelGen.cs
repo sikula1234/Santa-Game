@@ -73,21 +73,22 @@ public class NewLevelGen : MonoBehaviour
 
 			if(DiscoverRooms())
 			{
+
 				SetRoomTypes(rooms);
 				for (int i = 0; i < rooms.Length; i++)
 				{
 					rooms[i].GenerateRoom();
 				}
-				stopRoomGeneration = true;				
-
+				stopRoomGeneration = true;
 				// Spawne Spawn Room a Santu
 				transform.GetComponent<SpawnRoomGen>().SpawnRandomRoom();
 				// Spawne darky
-				FindObjectOfType<GiftSpawner>().SpawnGifts();
+				//FindObjectOfType<GiftSpawner>().SpawnGifts();
 				// Spawne moby
 				FindObjectOfType<MobSpawner>().SpawnMobs();
 				// Startne timer ve hre
 				FindObjectOfType<Countdown>().StartTimer();				
+		
 			}
 		} else
 		{

@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 1584902157378990, guid: 9e7ddb97f4d9c804c92c6e59fee55318, type: 3}
   mobs: []
   spawnCoordinates: []
-  pocetMobu: 7
+  pocetMobu: 6
   layer:
     serializedVersion: 2
     m_Bits: 4294967295

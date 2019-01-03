@@ -290,6 +290,8 @@ Transform:
   - {fileID: 2000530007068547156}
   - {fileID: 4565633781658247809}
   - {fileID: 6976750167095899174}
+  - {fileID: 5887809863611506908}
+  - {fileID: 1063201431311421809}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1192,6 +1194,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 69f225561ad9d2b43bed2843f5300251,
+        type: 3}
+      propertyPath: m_Name
+      value: bathtub_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 69f225561ad9d2b43bed2843f5300251,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1257,11 +1264,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 69f225561ad9d2b43bed2843f5300251,
-        type: 3}
-      propertyPath: m_Name
-      value: bathtub_01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69f225561ad9d2b43bed2843f5300251, type: 3}
 --- !u!4 &4364399615841259225 stripped
@@ -1295,7 +1297,7 @@ PrefabInstance:
     - target: {fileID: 224858176768706961, guid: a2ded724cb8f9a44baa5e9e13174bf09,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224858176768706961, guid: a2ded724cb8f9a44baa5e9e13174bf09,
         type: 3}
@@ -1427,6 +1429,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
+        type: 3}
+      propertyPath: m_Name
+      value: shower
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1482,11 +1489,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
-        type: 3}
-      propertyPath: m_Name
-      value: shower
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f0934054bfb1f4b85bc11ae70e6a04, type: 3}
 --- !u!4 &2301956431368929084 stripped
@@ -1495,6 +1497,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3951889796827714128}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4125118348165606741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8229370432124177790}
+    m_Modifications:
+    - target: {fileID: 5616175814407733580, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_Name
+      value: towel-hanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fae0b4908fea0764997d0aa6f956b6bc, type: 3}
+--- !u!4 &1063201431311421809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4125118348165606741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4219457563426043398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1502,6 +1579,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 35dbd88152626274caacd1d017bf4c77,
+        type: 3}
+      propertyPath: m_Name
+      value: washing_machine
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 35dbd88152626274caacd1d017bf4c77,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1556,11 +1638,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 35dbd88152626274caacd1d017bf4c77,
-        type: 3}
-      propertyPath: m_Name
-      value: washing_machine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35dbd88152626274caacd1d017bf4c77, type: 3}
@@ -1645,6 +1722,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4342236323439405840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4918249097950793528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8229370432124177790}
+    m_Modifications:
+    - target: {fileID: 5020904465855850589, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_Name
+      value: small-chair-f3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9438cf306caceed4c9d889664f444de5, type: 3}
+--- !u!4 &5887809863611506908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1582050582349541348, guid: 9438cf306caceed4c9d889664f444de5,
+    type: 3}
+  m_PrefabInstance: {fileID: 4918249097950793528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5323791305966890362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1652,6 +1804,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
+        type: 3}
+      propertyPath: m_Name
+      value: big-lamp
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1707,11 +1864,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
-        type: 3}
-      propertyPath: m_Name
-      value: big-lamp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69c4292013a6cea4ea8b6ac869f5a7ce, type: 3}
 --- !u!4 &6972759716887494678 stripped
@@ -1727,6 +1879,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
+        type: 3}
+      propertyPath: m_Name
+      value: washbasin
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1791,11 +1948,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
-        type: 3}
-      propertyPath: m_Name
-      value: washbasin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773780cf10df9614e8cbe5ed2aff2d0d, type: 3}
@@ -1887,6 +2039,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 42eec64f9f2cade43847162f013b47eb,
+        type: 3}
+      propertyPath: m_Name
+      value: flower_03
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 42eec64f9f2cade43847162f013b47eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1942,11 +2099,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 42eec64f9f2cade43847162f013b47eb,
-        type: 3}
-      propertyPath: m_Name
-      value: flower_03
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42eec64f9f2cade43847162f013b47eb, type: 3}
 --- !u!4 &5127505982680926187 stripped
@@ -1962,6 +2114,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 2b81fc61cda80774883f13405b306c7f,
+        type: 3}
+      propertyPath: m_Name
+      value: dresser_03
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 2b81fc61cda80774883f13405b306c7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2016,11 +2173,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 2b81fc61cda80774883f13405b306c7f,
-        type: 3}
-      propertyPath: m_Name
-      value: dresser_03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b81fc61cda80774883f13405b306c7f, type: 3}

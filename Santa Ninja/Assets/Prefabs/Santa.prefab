@@ -134,7 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2.5
-  flipRot: 1
 --- !u!114 &114822702048743396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +193,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enlargementTime: 2
   maxCircleSize: 0.95
+  ratio: 0
+  velocity: 0
+  radius: 0
 --- !u!212 &3196632806078088827
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 58740916121113168}
   - component: {fileID: 114085627530317000}
   - component: {fileID: 114822702048743396}
+  - component: {fileID: 4858367892706654825}
+  - component: {fileID: 4225565055020207217}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Player
@@ -144,6 +146,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7144de324b7476744b5e54b444b84a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &4858367892706654825
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567232384582262}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba534993f93772e479787445a82c3f9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4225565055020207217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567232384582262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045794853cdf56243a43ea84aedb0e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3506606021947041082

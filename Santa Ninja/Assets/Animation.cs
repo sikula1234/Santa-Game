@@ -17,7 +17,7 @@ public class Animation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float rychlost = santaRigidBody.velocity.magnitude / 4.2f;
+        float rychlost = santaRigidBody.velocity.magnitude * 100 / 4.2f;
 
         animator.SetFloat("Rychlost", rychlost);
     }

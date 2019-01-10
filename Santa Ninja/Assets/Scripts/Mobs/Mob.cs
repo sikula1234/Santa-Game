@@ -34,11 +34,12 @@ public class Mob : MonoBehaviour {
 		}	Vypnuto pro testovani*/	
 	}
 
-	
+
 	private void MoveMob()
 	{		
 		transform.position = Vector3.MoveTowards(transform.position, pathPoints[index].position, movementSpeed * Time.deltaTime);
 	}
+ 
 
 	//Ceka a pak vysle moba na dalsi bod
 	IEnumerator WaitOnPoint()

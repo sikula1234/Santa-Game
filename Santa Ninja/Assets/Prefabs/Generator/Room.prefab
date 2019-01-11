@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8795569558972285231}
+  - component: {fileID: 936263099949412888}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -100,6 +101,11 @@ MonoBehaviour:
   - {fileID: 8229370432124177791, guid: 79024e87ecda68f4dbdadc0d1efc0cfc, type: 3}
   - {fileID: 8229370432124177791, guid: 196187c1eb4cbd64fadb6ecb4211b3f7, type: 3}
   - {fileID: 8229370432124177791, guid: 97cc25eb1ab1df54ba3ab281346946ba, type: 3}
+  - {fileID: 8229370432124177791, guid: a761399ce7d1beb4a8f1dd0e97f87489, type: 3}
+  - {fileID: 8229370432124177791, guid: 4dc4f4991279ca64da08489fe5bc0d56, type: 3}
+  - {fileID: 8229370432124177791, guid: daf73396d72528a4e878267b34f5c4b1, type: 3}
+  - {fileID: 8229370432124177791, guid: 84280075aed02df47bf37de3cebbd9b4, type: 3}
+  - {fileID: 8229370432124177791, guid: 965212c4558dceb4f92d443f6ce44cac, type: 3}
   - {fileID: 8229370432124177791, guid: 9cdbf4f9679e1c6478ff6eefc021324d, type: 3}
   - {fileID: 8229370432124177791, guid: 1c6e1ec161cd0b844b49ddc6dad99be6, type: 3}
   - {fileID: 8229370432124177791, guid: 125418872774301469a4b7c62e3bddbb, type: 3}
@@ -120,6 +126,19 @@ MonoBehaviour:
   - {fileID: 8229370432124177791, guid: 1b2a6ad9e83063f4294fd8edd2e5cf56, type: 3}
   - {fileID: 8229370432124177791, guid: 0546ebe766297dd4c9b34b91e9746812, type: 3}
   - {fileID: 8229370432124177791, guid: e309883db7b0fee418eed4219b8e2e4d, type: 3}
+--- !u!65 &936263099949412888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229370432124177791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9, y: 1, z: 9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8913996744499439222
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +1001,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

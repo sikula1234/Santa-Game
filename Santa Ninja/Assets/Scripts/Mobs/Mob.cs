@@ -53,8 +53,7 @@ public class Mob : MonoBehaviour {
 		if (transform.GetComponent<NavMeshAgent>() == true)
 			if (navMeshAgent.velocity.sqrMagnitude > Mathf.Epsilon)
 			{
-				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.back); //, Vector3.back
-																											  //transform.rotation = 
+				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.back); //, Vector3.back																						  //transform.rotation = 
 				//spriteRendererTransform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.forward);
 				//fovTransform.rotation = transform.rotation;
 			} 

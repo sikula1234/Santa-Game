@@ -15,6 +15,13 @@ public class FieldOfView : MonoBehaviour
 	public bool zmen1;
 	public bool zmen2;
 	public bool zmen3;
+	public int change;
+	private NavMeshAgent navMeshAgent;
+
+	private void Start()
+	{
+		navMeshAgent = transform.GetComponent<NavMeshAgent>();
+	}
 
 	private void FixedUpdate()
 	{
@@ -77,17 +84,29 @@ public class FieldOfView : MonoBehaviour
 				zmen1 = true;
 			}
 			if (Mathf.Sin(angleDeg * Mathf.Deg2Rad) <= 0 && Mathf.Cos(angleDeg * Mathf.Deg2Rad) >= 0)
-			{				
+			{
 				zmen2 = true;
 
-				if(Mathf.Sin(angleDeg * Mathf.Deg2Rad) < -0.09f && Mathf.Cos(angleDeg * Mathf.Deg2Rad) > 0.09f)
+				if (Mathf.Sin(angleDeg * Mathf.Deg2Rad) < -0.09f && Mathf.Cos(angleDeg * Mathf.Deg2Rad) > 0.09f)
 				{
 					zmen3 = true;
+
+					if (Mathf.Sin(angleDeg * Mathf.Deg2Rad) < -0.9f && Mathf.Cos(angleDeg * Mathf.Deg2Rad) > 0.15f)
+					{
+						zmen3 = false;
+					}
+					if (Mathf.Sin(angleDeg * Mathf.Deg2Rad) > -0.9f && Mathf.Cos(angleDeg * Mathf.Deg2Rad) > 0.4f)
+					{
+						zmen3 = false;
+
+					}
 				}
 			}
 		}
 
-		if(zmen1)
+		//Debug.Log(Mathf.Sin(angleDeg * Mathf.Deg2Rad) + ", " + Mathf.Cos(angleDeg * Mathf.Deg2Rad));
+
+		if (zmen1)
 		{
 			vect = new Vector2(Mathf.Sin(angleDeg * Mathf.Deg2Rad), -Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 		}
@@ -95,7 +114,7 @@ public class FieldOfView : MonoBehaviour
 		{
 			vect = new Vector2(Mathf.Sin(angleDeg * Mathf.Deg2Rad), -Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 		}
-		if(zmen3)
+		if (zmen3)
 		{
 			vect = new Vector2(-Mathf.Sin(angleDeg * Mathf.Deg2Rad), Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 		}

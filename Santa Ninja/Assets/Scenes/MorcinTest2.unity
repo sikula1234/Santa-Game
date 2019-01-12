@@ -2177,12 +2177,12 @@ PrefabInstance:
     - target: {fileID: 114257280297934452, guid: 96c0c4eb90ac7ee46bc65ebb2d8eb759,
         type: 3}
       propertyPath: pos.x
-      value: 5.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114257280297934452, guid: 96c0c4eb90ac7ee46bc65ebb2d8eb759,
         type: 3}
       propertyPath: pos.y
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114257280297934452, guid: 96c0c4eb90ac7ee46bc65ebb2d8eb759,
         type: 3}

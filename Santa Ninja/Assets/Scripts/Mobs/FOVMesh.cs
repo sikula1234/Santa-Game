@@ -42,7 +42,7 @@ public class FOVMesh : MonoBehaviour
 		for(int i = 0; i <= stepCount; i++)
 		{
 			float angle = fov.transform.eulerAngles.x - fov.viewAngle / 2 + stepAngle * i;
-			Vector3 dir = fov.DirFromAngle2(angle, FirstLoop(i));
+			Vector3 dir = fov.DirFromAngle2(angle, FirstLoop(i, stepCount));
 			//Debug.Log(dir);
 			hit = Physics2D.Raycast(fov.transform.position, dir, fov.viewRadius, fov.obstacleMask);
 
@@ -81,11 +81,13 @@ public class FOVMesh : MonoBehaviour
 		mesh.RecalculateNormals();
 	}
 
-	bool FirstLoop(int i)
+	int FirstLoop(int i, int length)
 	{
 		if (i == 0)
-			return true;
+			return 0;
+		else if (i < length)
+			return 1;
 		else
-			return false;
+			return 2;
 	}
 }

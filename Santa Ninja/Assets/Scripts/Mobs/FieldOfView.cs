@@ -62,7 +62,7 @@ public class FieldOfView : MonoBehaviour
 		return new Vector2(Mathf.Sin(angleDeg * Mathf.Deg2Rad), Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 	}
 
-	public Vector2 DirFromAngle2(float angleDeg, bool firstLoop)
+	public Vector2 DirFromAngle2(float angleDeg, int firstLoop)
 	{
 
 		angleDeg -= 360f;
@@ -77,7 +77,7 @@ public class FieldOfView : MonoBehaviour
 			vect = new Vector2(Mathf.Sin(angleDeg * Mathf.Deg2Rad), -Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 		} */
 
-		if (firstLoop)
+		if (firstLoop == 0)
 		{
 			if (Mathf.Sin(angleDeg * Mathf.Deg2Rad) < 0 && Mathf.Cos(angleDeg * Mathf.Deg2Rad) < 0)
 			{
@@ -102,7 +102,7 @@ public class FieldOfView : MonoBehaviour
 					}
 				}
 			}
-		}
+		} 
 
 		//Debug.Log(Mathf.Sin(angleDeg * Mathf.Deg2Rad) + ", " + Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 
@@ -119,6 +119,12 @@ public class FieldOfView : MonoBehaviour
 			vect = new Vector2(-Mathf.Sin(angleDeg * Mathf.Deg2Rad), Mathf.Cos(angleDeg * Mathf.Deg2Rad));
 		}
 
+		if (firstLoop == 2)
+		{
+			zmen1 = false;
+			zmen2 = false;
+			zmen3 = false;
+		}
 
 		return vect;
 	}

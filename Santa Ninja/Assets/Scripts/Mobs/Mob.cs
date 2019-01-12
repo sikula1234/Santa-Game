@@ -8,7 +8,7 @@ public class Mob : MonoBehaviour {
 	public float movementSpeed = 3f;
 	public PathPoint[] pathPoints;
 	public Transform spriteRendererTransform;
-	public Transform fovTransform;
+	//public Transform fovTransform;
 
 	Rigidbody2D mobRigidbody;
 	private bool moveMob;
@@ -17,7 +17,7 @@ public class Mob : MonoBehaviour {
 	//Testovani
 	public bool move = false;
 	public Vector2 pos;
-	public NavMeshAgent navMeshAgent;
+	NavMeshAgent navMeshAgent;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +25,7 @@ public class Mob : MonoBehaviour {
 		//StartCoroutine(WaitOnPoint());- Vypnuto pro testovani
 		if(transform.GetComponent<NavMeshAgent>() == true)
 		{
+			navMeshAgent = transform.GetComponent<NavMeshAgent>();
 			navMeshAgent.updateRotation = false;
 		}
 	}

@@ -89,7 +89,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4971784526032204}
   - component: {fileID: 50737478461375106}
-  - component: {fileID: 58786736659083876}
   - component: {fileID: 114257280297934452}
   - component: {fileID: 7608233884614920493}
   - component: {fileID: 4861100873482281669}
@@ -107,15 +106,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584902157378990}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 1.099, y: 1.974, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1312888873}
   - {fileID: 2071382933040979552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50737478461375106
 Rigidbody2D:
   serializedVersion: 4
@@ -137,22 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58786736659083876
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584902157378990}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.4
 --- !u!114 &114257280297934452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,10 +161,8 @@ MonoBehaviour:
   - position: {x: -8.53, y: 3.46}
     timeToWait: 1
   spriteRendererTransform: {fileID: 1312888873}
-  fovTransform: {fileID: 2071382933040979552}
   move: 0
   pos: {x: 0, y: 0}
-  navMeshAgent: {fileID: 4861100873482281669}
 --- !u!114 &7608233884614920493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +185,10 @@ MonoBehaviour:
     m_Bits: 32768
   visiblePlayer: []
   angle: 0
+  zmen1: 0
+  zmen2: 0
+  zmen3: 0
+  change: 0
 --- !u!195 &4861100873482281669
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -214,7 +199,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

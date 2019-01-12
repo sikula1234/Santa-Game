@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NewLevelGen : MonoBehaviour
 {
@@ -82,13 +83,16 @@ public class NewLevelGen : MonoBehaviour
 				stopRoomGeneration = true;
 				// Spawne Spawn Room a Santu
 				transform.GetComponent<SpawnRoomGen>().SpawnRandomRoom();
+				// Nastavi mistnostem navMesh
+				FindObjectOfType<EntrNavMeshManager>().CloseNavMeshEntrances();
+				// Bakne novy navmesh
+				FindObjectOfType<NavMeshSurface>().BuildNavMesh();
 				// Spawne darky
 				//FindObjectOfType<GiftSpawner>().SpawnGifts();
 				// Spawne moby
 				FindObjectOfType<MobSpawner>().SpawnMobs();
 				// Startne timer ve hre
-				FindObjectOfType<Countdown>().StartTimer();				
-		
+				FindObjectOfType<Countdown>().StartTimer();		
 			}
 		} else
 		{

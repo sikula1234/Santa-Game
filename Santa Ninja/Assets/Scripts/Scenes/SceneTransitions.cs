@@ -51,7 +51,7 @@ public class SceneTransitions : MonoBehaviour
 				break;
 			case 2: // Victory
                 MessageVictory.SetActive(true);
-                ButtonContinue.SetActive(true);
+                // ButtonContinue.SetActive(true);
                 text.text = "You have won!";
 				break;
 		}

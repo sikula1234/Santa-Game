@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class FOVRotation : MonoBehaviour
 {
-	Quaternion rotation;
+	//Quaternion rotation;
 
 	void Awake()
 	{
-		rotation = transform.rotation;
+		//rotation = transform.rotation;
 	}
 	void LateUpdate()
 	{
-		transform.rotation = rotation * Quaternion.Euler(1, 1, -90);
-		Debug.Log(rotation);
+		//transform.rotation = rotation * Quaternion.Euler(1, 1, -90);
+		//Debug.Log(rotation);
+		//transform.rotation = transform.parent.transform.rotation;
 	}
 }

@@ -22,8 +22,8 @@ public class FOVMesh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+		
+	}
 
 	private void LateUpdate()
 	{
@@ -41,8 +41,9 @@ public class FOVMesh : MonoBehaviour
 
 		for(int i = 0; i <= stepCount; i++)
 		{
-			float angle = fov.transform.eulerAngles.y - fov.viewAngle / 2 + stepAngle * i;
-			Vector3 dir = fov.DirFromAngle(angle, false);
+			float angle = fov.transform.eulerAngles.x - fov.viewAngle / 2 + stepAngle * i;
+			Vector3 dir = fov.DirFromAngle2(angle, FirstLoop(i));
+			//Debug.Log(dir);
 			hit = Physics2D.Raycast(fov.transform.position, dir, fov.viewRadius, fov.obstacleMask);
 
 			if (hit.collider == null)
@@ -78,5 +79,13 @@ public class FOVMesh : MonoBehaviour
 		mesh.vertices = vertices;
 		mesh.triangles = triangles;
 		mesh.RecalculateNormals();
+	}
+
+	bool FirstLoop(int i)
+	{
+		if (i == 0)
+			return true;
+		else
+			return false;
 	}
 }

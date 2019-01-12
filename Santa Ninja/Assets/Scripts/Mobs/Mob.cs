@@ -49,12 +49,14 @@ public class Mob : MonoBehaviour {
 			move = false;
 		}
 		
+		
 		if (transform.GetComponent<NavMeshAgent>() == true)
 			if (navMeshAgent.velocity.sqrMagnitude > Mathf.Epsilon)
 			{
-				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized);
-				spriteRendererTransform.rotation = transform.rotation * Quaternion.Euler(0, 270, -90);
-				//fovTransform.rotation = transform.rotation * Quaternion.Euler(0, 270, -90);
+				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.back); //, Vector3.back
+																											  //transform.rotation = 
+				//spriteRendererTransform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.forward);
+				//fovTransform.rotation = transform.rotation;
 			} 
 	}
 	
@@ -91,7 +93,7 @@ public class Mob : MonoBehaviour {
 			moveMob = true;
 
 			//obstarava rotaci celeho moba (fov i sprite renderer)
-			transform.right = new Vector3(pathPoints[index].position.x, pathPoints[index].position.y, 0) - spriteRendererTransform.parent.position;
+			//transform.right = new Vector3(pathPoints[index].position.x, pathPoints[index].position.y, 0) - spriteRendererTransform.parent.position;
 		}
 
 	}

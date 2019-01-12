@@ -8,8 +8,15 @@ public class SceneTransitions : MonoBehaviour
 {
 	public Animator transitionAnimator;
 	public Text text;
+    public GameObject MessageSpotted;
+    public GameObject MessageTimesup;
+    public GameObject MessageVictory;
+    public GameObject ButtonRetry;
+    public GameObject ButtonContinue;
 
-	public void LoadScene(string sceneName)
+    public GameObject gameoverMenuUI;
+
+    public void LoadScene(string sceneName)
 	{
 		StartCoroutine(LoadSceneCoroutine(sceneName));
 	}
@@ -19,31 +26,39 @@ public class SceneTransitions : MonoBehaviour
 		StartCoroutine(LoadSceneCoroutine(sceneName, cislo));			
 	}
 
-	IEnumerator LoadSceneCoroutine(string sceneName)
+	public IEnumerator LoadSceneCoroutine(string sceneName)
 	{
 		transitionAnimator.SetTrigger("fade_out");
 		yield return new WaitForSeconds(1.5f);
 		SceneManager.LoadScene(sceneName);
 	}
 
-	IEnumerator LoadSceneCoroutine(string sceneName, int cislo)
+	public IEnumerator LoadSceneCoroutine(string sceneName, int cislo)
 	{
-		// Nejspis bude potreba zpomalit/zastavit cas, aby se zamezilo glitchum!!! 
-		switch (cislo)
+        // Nejspis bude potreba zpomalit/zastavit cas, aby se zamezilo glitchum!!!
+
+        switch (cislo)
 		{
 			case 0: // Spotted
-				text.text = "You have been spotted!";
-				break;
+                MessageSpotted.SetActive(true);
+                ButtonRetry.SetActive(true);
+                text.text = "You have been spotted!";
+                break;
 			case 1: // Time
-				text.text = "You ran out of time!";
+                MessageTimesup.SetActive(true);
+                ButtonRetry.SetActive(true);
+                text.text = "You ran out of time!";
 				break;
 			case 2: // Victory
-				text.text = "You have won!";
+                MessageVictory.SetActive(true);
+                ButtonContinue.SetActive(true);
+                text.text = "You have won!";
 				break;
 		}
-		transitionAnimator.SetTrigger("text");
-		transitionAnimator.SetTrigger("fade_out");
-		yield return new WaitForSeconds(2.5f);
-		SceneManager.LoadScene(sceneName);
-	}
+		/* transitionAnimator.SetTrigger("text");
+		transitionAnimator.SetTrigger("fade_out"); */
+		yield return new WaitForSeconds(0f);
+        gameoverMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }

@@ -65,13 +65,19 @@ public class Room : MonoBehaviour
 			}
 		}
 
-		GameObject randomInteriorPrefab = suitableInteriorPrefabs[(int)Random.Range(0, suitableInteriorPrefabs.Count())]; // odebrano -1
+		if (suitableInteriorPrefabs.Count() > 0)
+		{
+			GameObject randomInteriorPrefab = suitableInteriorPrefabs[(int)Random.Range(0, suitableInteriorPrefabs.Count())]; // odebrano -1
 
-		//Spawne interior
-		interiorPrefab = Instantiate(randomInteriorPrefab);
-		interiorPrefab.transform.parent = gameObject.transform;
-		interiorPrefab.transform.localPosition = new Vector3(0, 0, 0);
-		interiorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
+			//Spawne interior
+			interiorPrefab = Instantiate(randomInteriorPrefab);
+			interiorPrefab.transform.parent = gameObject.transform;
+			interiorPrefab.transform.localPosition = new Vector3(0, 0, 0);
+			interiorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
+		} else
+		{
+			Debug.LogWarning("There is not a suitable room: " + roomType + ", " + roomEntranceType);
+		}	
 	}
 
 	//Sets roomEntrance and updates roomEntranceType

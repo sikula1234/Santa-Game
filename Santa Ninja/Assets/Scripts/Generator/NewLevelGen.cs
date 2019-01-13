@@ -88,7 +88,7 @@ public class NewLevelGen : MonoBehaviour
 				// Bakne novy navmesh
 				FindObjectOfType<NavMeshSurface>().BuildNavMesh();
 				// Spawne darky
-				//FindObjectOfType<GiftSpawner>().SpawnGifts();
+				FindObjectOfType<GiftSpawner>().SpawnGifts();
 				// Spawne moby
 				FindObjectOfType<MobSpawner>().SpawnMobs();
 				// Startne timer ve hre

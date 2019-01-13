@@ -47,3 +47,5 @@ MonoBehaviour:
     type: 3}
   boostPrefab: {fileID: 8340221709612713378, guid: 98d0e58220239664799bf80e8eb5f23e,
     type: 3}
+  giftsToSpawn: 3
+  boostsToSpawn: 3

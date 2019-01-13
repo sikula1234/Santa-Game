@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 114257280297934452}
   - component: {fileID: 7608233884614920493}
   - component: {fileID: 5073491260880588418}
+  - component: {fileID: 6257285696056922541}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Mob
@@ -211,6 +212,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6257285696056922541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584902157378990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ee1cc8abcec534cad4688484023fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationRadius: 5
+  floatCekani1: 1
+  floatCekani2: 5
 --- !u!1 &2450287852230640775
 GameObject:
   m_ObjectHideFlags: 0

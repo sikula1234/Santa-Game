@@ -1753,7 +1753,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 83
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
@@ -6207,7 +6207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd357284736c8204d9f2290db04a2f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  giftsStart: 4
+  giftsStart: 3
   actualNumberOfGifts: 4
   giftsCounter: {fileID: 1382132743}
 --- !u!4 &2117553527
@@ -6304,12 +6304,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2076979650121262088, guid: 7c063dec54c2b9049b95e28fd3dcff89,
-        type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: 7959e8afbbbe7054b95de15ef96c17ee,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c063dec54c2b9049b95e28fd3dcff89, type: 3}
 --- !u!1001 &8187853996990643804

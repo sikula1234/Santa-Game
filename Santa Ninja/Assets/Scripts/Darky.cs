@@ -6,7 +6,8 @@ using System.Threading;
 
 public class Darky : MonoBehaviour  {
 
-    public int giftsStart = 4;
+    public int giftsStart = 3;
+	[HideInInspector]
     public int actualNumberOfGifts;
     public Text giftsCounter;
 
@@ -25,7 +26,7 @@ public class Darky : MonoBehaviour  {
         giftsCounter.text = ("" + actualNumberOfGifts);
 		if(actualNumberOfGifts <= 0)
 		{
-			sceneTransitions.LoadScene("TestLevel", 2);
+			sceneTransitions.LoadScene("MainScene", 2);
 		}
     }
 }

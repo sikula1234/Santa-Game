@@ -84,7 +84,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6915235530835462797}
   - component: {fileID: 2711482882557089653}
-  - component: {fileID: 4726945398852414603}
   m_Layer: 16
   m_Name: Entrance --
   m_TagString: Untagged
@@ -123,19 +122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floor: {fileID: 21300000, guid: 2338cac9f18bc964ca4f1d69eff1f107, type: 3}
   isOpen: 0
---- !u!65 &4726945398852414603
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522154450412934060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!61 &6770563382910525150
 BoxCollider2D:
   m_ObjectHideFlags: 0

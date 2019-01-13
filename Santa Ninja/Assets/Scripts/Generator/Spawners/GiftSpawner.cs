@@ -6,8 +6,8 @@ public class GiftSpawner : MonoBehaviour
 {
 	public GameObject giftPrefab;
 	public GameObject boostPrefab;
-	int giftsToSpawn = 4;
-	int boostsToSpawn = 3;
+	public int giftsToSpawn = 3;
+	public int boostsToSpawn = 3;
 
 	public void SpawnGifts()
 	{

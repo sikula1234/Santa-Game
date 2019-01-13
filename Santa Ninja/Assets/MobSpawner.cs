@@ -26,6 +26,7 @@ public class MobSpawner : MonoBehaviour
 		for (int i = 0; i < mobs.Length; i++)
 		{
 			mobs[i].transform.position = spawnCoordinates[i];
+			//mobs[i].transform.position = new Vector3(spawnCoordinates[i].x, spawnCoordinates[i].y, -2f);
 		}
 	}
 

@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 50737478461375106}
   - component: {fileID: 114257280297934452}
   - component: {fileID: 7608233884614920493}
+  - component: {fileID: 7533403778348171038}
   - component: {fileID: 4861100873482281669}
   m_Layer: 0
   m_Name: Boy
@@ -189,6 +190,21 @@ MonoBehaviour:
   zmen2: 0
   zmen3: 0
   change: 0
+--- !u!114 &7533403778348171038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584902157378990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ee1cc8abcec534cad4688484023fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationRadius: 5
+  floatCekani1: 1
+  floatCekani2: 5
 --- !u!195 &4861100873482281669
 NavMeshAgent:
   m_ObjectHideFlags: 0

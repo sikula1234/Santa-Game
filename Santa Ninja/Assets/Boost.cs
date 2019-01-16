@@ -20,7 +20,7 @@ public class Boost : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (boostCountdownStart == true && boostCountdownFirst == true)
+		if (boostCountdownStart == true & boostCountdownFirst == true)
 		{
 			boostCountdownFirst = false;
 			boostTimeLeft = 10;

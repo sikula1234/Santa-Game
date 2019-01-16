@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2965022188610235756}
   - component: {fileID: 7457443712298179988}
-  - component: {fileID: 854850443710823721}
+  - component: {fileID: 6613028302481894514}
   m_Layer: 0
   m_Name: bed_01
   m_TagString: Untagged
@@ -80,29 +80,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &854850443710823721
-BoxCollider2D:
+--- !u!65 &6613028302481894514
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4978652822342567325}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.3333333, y: 1}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.25, y: 0.125}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 2.1333334, y: 4.266667}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3333334, y: 2.666667}
-  m_EdgeRadius: 0
+  m_Size: {x: 1.3333334, y: 2.666667, z: 5}
+  m_Center: {x: 0.3333333, y: 1, z: 0}

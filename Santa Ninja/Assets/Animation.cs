@@ -5,13 +5,13 @@ using UnityEngine;
 public class Animation : MonoBehaviour
 {
     Animator animator;
-    Rigidbody2D santaRigidBody;
+    Rigidbody santaRigidBody;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        santaRigidBody = GetComponent<Rigidbody2D>();
+        santaRigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

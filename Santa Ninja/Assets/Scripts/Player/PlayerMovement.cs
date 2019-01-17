@@ -4,14 +4,14 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float movementSpeed = 4f;    //co za číslo je tady je jedno, záleží na tom, co je v Unity
 	Joystick joystick;
-	Rigidbody2D santaRigidBody;
+	Rigidbody santaRigidBody;
 	Vector3 lastLook = new Vector3(0, 0, 4000);
 
 	// Use this for initialization
 	void Start()
 	{
 		joystick = FindObjectOfType<Joystick>();
-		santaRigidBody = GetComponent<Rigidbody2D>();
+		santaRigidBody = GetComponent<Rigidbody>();
 
 	}
 

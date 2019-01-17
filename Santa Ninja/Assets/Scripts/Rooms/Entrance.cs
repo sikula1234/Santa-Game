@@ -23,12 +23,8 @@ public class Entrance : MonoBehaviour
 	{
 		isOpen = true;
 
-		BoxCollider2D[] colliders = GetComponentsInChildren<BoxCollider2D>();
-		
-		for (int i = 0; i < colliders.Length; i++)
-		{
-			colliders[i].enabled = false;
-		}
+		BoxCollider boxCollider = transform.GetComponent<BoxCollider>();
+		boxCollider.enabled = false;
 
 		SpriteRenderer[] spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
 		for (int i = 0; i < spriteRenderers.Length; i++)

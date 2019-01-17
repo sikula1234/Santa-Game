@@ -37,7 +37,7 @@ public class Boost : MonoBehaviour
 		}
 	}
 
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter(Collider collision)
 	{
 		if (collision.tag == "Player")
 		{
@@ -46,7 +46,7 @@ public class Boost : MonoBehaviour
 			{
 				PlayerMovement santaPlayerMovement = FindObjectOfType<PlayerMovement>();
 				santaPlayerMovement.movementSpeed = 5;
-				Debug.Log("Hit");
+				Debug.Log("Given boost");
 				Destroy(gameObject);
 			}
 		}

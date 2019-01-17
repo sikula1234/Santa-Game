@@ -28,7 +28,7 @@ public class NoiseMaker : MonoBehaviour
 	{
 		timeLeft -= Time.deltaTime;
 
-		velocity = transform.parent.GetComponent<Rigidbody2D>().velocity.magnitude * 100;
+		velocity = transform.parent.GetComponent<Rigidbody>().velocity.magnitude * 100;
 
 		if (velocity > 4.2f)
 		{

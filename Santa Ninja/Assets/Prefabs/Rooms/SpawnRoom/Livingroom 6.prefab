@@ -1153,11 +1153,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: ad947f0ba1d346949ad68137046883f5,
-        type: 3}
-      propertyPath: m_Name
-      value: aquarium-1
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: ad947f0ba1d346949ad68137046883f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1212,6 +1207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: ad947f0ba1d346949ad68137046883f5,
+        type: 3}
+      propertyPath: m_Name
+      value: aquarium-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad947f0ba1d346949ad68137046883f5, type: 3}
@@ -1396,7 +1396,7 @@ PrefabInstance:
     - target: {fileID: 1419281046371998939, guid: e5c8c1a71bd9f654bb47a24ca896a83c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1419281046371998939, guid: e5c8c1a71bd9f654bb47a24ca896a83c,
         type: 3}
@@ -1453,11 +1453,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
-        type: 3}
-      propertyPath: m_Name
-      value: bookshelf
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: c5e796d5dcdd03e4889bd61550a13ca5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1512,6 +1507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
+        type: 3}
+      propertyPath: m_Name
+      value: bookshelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5e796d5dcdd03e4889bd61550a13ca5, type: 3}
@@ -1753,11 +1753,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 64bd17f7c9e6d3a4ea00bb86360e882a,
-        type: 3}
-      propertyPath: m_Name
-      value: dresser_01
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 64bd17f7c9e6d3a4ea00bb86360e882a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1813,6 +1808,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 64bd17f7c9e6d3a4ea00bb86360e882a,
+        type: 3}
+      propertyPath: m_Name
+      value: dresser_01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64bd17f7c9e6d3a4ea00bb86360e882a, type: 3}
 --- !u!4 &4626737210095423293 stripped
@@ -1828,11 +1828,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 7444442690760710046, guid: a88f15431f4dfd1478e739c977c05e79,
-        type: 3}
-      propertyPath: m_Name
-      value: small-chair-f2
-      objectReference: {fileID: 0}
     - target: {fileID: 6416603500056651604, guid: a88f15431f4dfd1478e739c977c05e79,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1888,6 +1883,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 7444442690760710046, guid: a88f15431f4dfd1478e739c977c05e79,
+        type: 3}
+      propertyPath: m_Name
+      value: small-chair-f2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a88f15431f4dfd1478e739c977c05e79, type: 3}
 --- !u!4 &3024535973313549048 stripped
@@ -1903,11 +1903,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: fc0be061748260c48b2a8a919a854210,
-        type: 3}
-      propertyPath: m_Name
-      value: sofa
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: fc0be061748260c48b2a8a919a854210,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1962,6 +1957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: fc0be061748260c48b2a8a919a854210,
+        type: 3}
+      propertyPath: m_Name
+      value: sofa
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc0be061748260c48b2a8a919a854210, type: 3}

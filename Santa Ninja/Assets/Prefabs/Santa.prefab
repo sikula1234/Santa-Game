@@ -153,8 +153,13 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+<<<<<<< HEAD
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+=======
   m_UseGravity: 0
   m_IsKinematic: 0
+>>>>>>> 05a8b0a422bdbc73ed6677002c91ac068ff0d56e
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0

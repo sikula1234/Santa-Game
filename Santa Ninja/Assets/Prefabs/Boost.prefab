@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostTimeLeft: 0
+<<<<<<< HEAD
+=======
   boostCountdownStart: 1
   boostCountdownFirst: 1
 --- !u!136 &8040460897022737421
@@ -110,3 +112,4 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> 05a8b0a422bdbc73ed6677002c91ac068ff0d56e

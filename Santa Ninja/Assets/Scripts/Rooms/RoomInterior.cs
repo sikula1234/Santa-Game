@@ -13,6 +13,11 @@ public class RoomInterior : MonoBehaviour
 	public bool bottomEntrance;
 	public bool leftEntrance;
 
+	private void Awake()
+	{
+		transform.rotation = Quaternion.AngleAxis(90, new Vector3(1, 0, 0));
+	}
+
 	// Zjisti, jestli je tento prefab vhodny pro mistnost na zaklade typu a vchodu
 	public bool IsSuitable(Room.roomTypes roomType, Room.roomEntranceTypes roomEntranceType)
 	{

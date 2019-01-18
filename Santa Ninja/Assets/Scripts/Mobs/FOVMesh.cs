@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FOVMesh : MonoBehaviour
 {
-	FieldOfView fov;
+	OldFieldOfView fov;
 	Mesh mesh;
 	RaycastHit2D hit;
 	[SerializeField] float meshRes = 2;
@@ -16,7 +16,7 @@ public class FOVMesh : MonoBehaviour
 	void Start()
     {
 		mesh = GetComponent<MeshFilter>().mesh;
-		fov = GetComponentInParent<FieldOfView>();
+		fov = GetComponentInParent<OldFieldOfView>();
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class FOVMesh : MonoBehaviour
 	void MakeMesh()
 	{
 		stepCount = Mathf.RoundToInt(fov.viewAngle * meshRes);
-		float stepAngle= fov.viewAngle / stepCount;
+		float stepAngle = fov.viewAngle / stepCount;
 
 		List<Vector3> viewVertex = new List<Vector3>();
 
@@ -41,8 +41,8 @@ public class FOVMesh : MonoBehaviour
 
 		for(int i = 0; i <= stepCount; i++)
 		{
-			float angle = fov.transform.eulerAngles.x - fov.viewAngle / 2 + stepAngle * i;
-			Vector3 dir = fov.DirFromAngle2(angle, FirstLoop(i, stepCount));
+			float angle = fov.transform.eulerAngles.z - fov.viewAngle / 2 + stepAngle * i; //y
+			Vector3 dir = fov.DirFromAngle(angle, false);
 			//Debug.Log(dir);
 			hit = Physics2D.Raycast(fov.transform.position, dir, fov.viewRadius, fov.obstacleMask);
 

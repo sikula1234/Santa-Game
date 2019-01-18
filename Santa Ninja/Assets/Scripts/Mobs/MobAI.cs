@@ -36,8 +36,8 @@ public class MobAI : MonoBehaviour
 		while(i < 100)
 		{
 			float x = Random.Range(-destinationRadius, destinationRadius);
-			float y = Random.Range(-destinationRadius, destinationRadius);
-			Vector3 targetPosition = new Vector3(x + transform.position.x, y + transform.position.y, transform.position.z);
+			float z = Random.Range(-destinationRadius, destinationRadius);
+			Vector3 targetPosition = new Vector3(x + transform.position.x, 0, z + transform.position.z);
 
 			if (navMeshAgent.CalculatePath(targetPosition, path))
 			{

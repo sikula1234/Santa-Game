@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FieldOfView : MonoBehaviour
+public class OldFieldOfView : MonoBehaviour
 {
 	public float viewRadius = 5;
 	public float viewAngle = 135;
@@ -55,8 +55,8 @@ public class FieldOfView : MonoBehaviour
 	{
 		if(!global)
 		{
-			angleDeg -= 360f;
-			angleDeg += transform.eulerAngles.y; //x - 180f
+			//angleDeg -= 360f;
+			angleDeg += transform.eulerAngles.z; //x - 180f
 			angle = angleDeg;
 		}
 		return new Vector2(Mathf.Sin(angleDeg * Mathf.Deg2Rad), Mathf.Cos(angleDeg * Mathf.Deg2Rad));

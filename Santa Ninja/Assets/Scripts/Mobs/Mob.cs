@@ -19,6 +19,10 @@ public class Mob : MonoBehaviour {
 	public Vector2 pos;
 	NavMeshAgent navMeshAgent;
 
+	//Testovani 2
+	public Vector2 vector;
+	public float angle;
+
 	// Use this for initialization
 	void Start () {
 		//transform.position = pathPoints[0].position; - Vypnuto pro testovani
@@ -54,10 +58,76 @@ public class Mob : MonoBehaviour {
 		if (transform.GetComponent<NavMeshAgent>() == true)
 			if (navMeshAgent.velocity.sqrMagnitude > Mathf.Epsilon)
 			{
-				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.back); //, Vector3.back																						  //transform.rotation = 
+				//transform.Rotate(-90, 0, 0);
+				//vector = new Vector2(navMeshAgent.velocity.normalized.x, navMeshAgent.velocity.normalized.y);
+				//angle = CalculateAngle(vector);
+				//transform.rotation = Quaternion.Euler(0, 0, angle);
+				//transform.RotateAround(new Vector3(0, 0, 1), 90f);
+
+				//float angle = Vector3.Angle(navMeshAgent.velocity.normalized, new Vector3(0, -1, 0));
+
+
+
+				//Debug.Log(angle);
+				//transform.rotation = Quaternion.AngleAxis(angle, Vector3.back);
+
+				//transform.rotation = transform.rotation * Quaternion.AngleAxis(45, new Vector3(0, 0, 1));
+				//transform.Rotate(0, 0, -45);
+
+				//transform.Rotate(0, 0, -45);
+
+				//transform.Rotate(new Vector3(0, 0, 1), 90f);
+				transform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.up); //, Vector3.back																						  //transform.rotation = 
 				//spriteRendererTransform.rotation = Quaternion.LookRotation(navMeshAgent.velocity.normalized, Vector3.forward);
 				//fovTransform.rotation = transform.rotation;
-			} 
+			}
+	}
+
+	float CalculateAngle (Vector2 vector)
+	{
+		float angle;
+		if (vector.x > 0 && vector.y > 0)
+		{
+			//angle = Mathf.Atan(vector.x / vector.y * Mathf.Deg2Rad);
+			angle = Mathf.Rad2Deg * Mathf.Atan2(vector.x, vector.y);
+			angle = -angle;
+		}
+		else if (vector.x < 0 && vector.y > 0)
+		{
+			//angle = Mathf.Atan(vector.x / vector.y * Mathf.Deg2Rad);
+			angle = Mathf.Rad2Deg * Mathf.Atan2(vector.x, vector.y);
+		}
+		else if (vector.x > 0 && vector.y < 0)
+		{
+			//angle = Mathf.Atan(vector.y / vector.x * Mathf.Deg2Rad);
+			angle = Mathf.Rad2Deg * Mathf.Atan2(vector.y, vector.x);
+			//angle = angle + 90f;
+		}
+		else if (vector.x < 0 && vector.y < 0)
+		{
+			//angle = Mathf.Atan(vector.y / vector.x * Mathf.Deg2Rad);
+			angle = Mathf.Rad2Deg * Mathf.Atan2(vector.y, vector.x);
+			angle = angle + 90f;
+		}
+		else if (vector.x == 0 && vector.y > 0)
+		{
+			angle = 0;
+		}
+		else if (vector.x == 0 && vector.y < 0)
+		{
+			angle = -90f;
+		}
+		else if (vector.x > 0 && vector.y == 0)
+		{
+			angle = 90f;
+		}
+		else if (vector.x < 0 && vector.y == 0)
+		{
+			angle = -90f;
+		}
+		else angle = 0;
+		//angle = angle / 2;
+		return angle;
 	}
 	
 	/*

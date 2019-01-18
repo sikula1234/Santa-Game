@@ -6,39 +6,41 @@ using UnityEngine.UI;
 
 public class Boost : MonoBehaviour
 {
-    BoostManager boostManager;
-    // Start is called before the first frame update
-    void Start()
+	public int boostTimeLeft = 0;
+	//public Text boostCountdown;
+	public bool boostCountdownStart = true;
+	public bool boostCountdownFirst = true;
+
+	// Start is called before the first frame update
+	void Start()
 	{
-        boostManager = FindObjectOfType<BoostManager>();
-    }
+
+	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		if (boostCountdownStart == true & boostCountdownFirst == true)
+		{
+			boostCountdownFirst = false;
+			boostTimeLeft = 10;
+		}
+		//boostCountdown.text = ("" + boostTimeLeft); - nemame pocitadlo zatim
 	}
 
-
-<<<<<<< HEAD
-    private void OnTriggerEnter2D(Collider2D collision)
-=======
-	private void OnTriggerEnter(Collider collision)
->>>>>>> 05a8b0a422bdbc73ed6677002c91ac068ff0d56e
+	IEnumerator LoseTime()
 	{
-		if (collision.tag == "Player" && !boostManager.isBoosted)
+		while (boostTimeLeft > 0)
 		{
-<<<<<<< HEAD
-            PlayerMovement santaPlayerMovement = FindObjectOfType<PlayerMovement>();
-            santaPlayerMovement.movementSpeed *= 2;
-            BoostManager boostManager = FindObjectOfType<BoostManager>();
-            boostManager.isBoosted = true;
-            SoundControls soundControls = FindObjectOfType<SoundControls>();
-            soundControls.timeToPlay = true;
-            BoostTimer boostTimer = FindObjectOfType<BoostTimer>();
-            boostTimer.timeToCountdown = true;
+			yield return new WaitForSeconds(1);
+			boostTimeLeft--;
+		}
+	}
 
-		    Destroy(gameObject);
-=======
+	private void OnTriggerEnter(Collider collision)
+	{
+		if (collision.tag == "Player")
+		{
 			boostCountdownStart = true;
 			if (boostTimeLeft > 0)
 			{
@@ -47,8 +49,6 @@ public class Boost : MonoBehaviour
 				Debug.Log("Given boost");
 				Destroy(gameObject);
 			}
->>>>>>> 05a8b0a422bdbc73ed6677002c91ac068ff0d56e
 		}
 	}
 }
-

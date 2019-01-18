@@ -45,11 +45,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mobPrefabs:
   - {fileID: 1584902157378990, guid: 96c0c4eb90ac7ee46bc65ebb2d8eb759, type: 3}
-  - {fileID: 1584902157378990, guid: d7720e5b4ab9a5e498d945203b42121f, type: 3}
-  - {fileID: 1584902157378990, guid: ab7fffcdab6bec2459abd9bf1f2548cc, type: 3}
-  - {fileID: 1584902157378990, guid: 54a6d4d138acfbe4f845c1986d72a9c0, type: 3}
-  - {fileID: 1584902157378990, guid: da1e70431987c1845b188499a2eb7b4f, type: 3}
-  - {fileID: 1584902157378990, guid: 9e7ddb97f4d9c804c92c6e59fee55318, type: 3}
+  - {fileID: 1584902157378990, guid: 10ee161a50cc16c4db267d1aba04360c, type: 3}
+  - {fileID: 1584902157378990, guid: fedefda82728ca543bbf55a13fb18077, type: 3}
+  - {fileID: 1584902157378990, guid: 072f371e0513fc7438a46197eab76c84, type: 3}
+  - {fileID: 1584902157378990, guid: 3d8502b1c8bd5b44d9bbcf347ece2f8b, type: 3}
+  - {fileID: 1584902157378990, guid: bfbaa503e2fffad4c8690300be1f8ea8, type: 3}
   mobs: []
   spawnCoordinates: []
   pocetMobu: 6

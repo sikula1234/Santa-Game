@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
+  - component: {fileID: 7101713127277342681}
   m_Layer: 0
   m_Name: Bedroom 4
   m_TagString: Untagged
@@ -110,6 +111,22 @@ MonoBehaviour:
   rightEntrance: 0
   bottomEntrance: 0
   leftEntrance: 0
+--- !u!114 &7101713127277342681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229370432124177791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &8913996744499439222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
+        type: 3}
+      propertyPath: m_Name
+      value: bookshelf (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: c5e796d5dcdd03e4889bd61550a13ca5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1197,11 +1219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
-        type: 3}
-      propertyPath: m_Name
-      value: bookshelf (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5e796d5dcdd03e4889bd61550a13ca5, type: 3}
 --- !u!4 &4187093844807980675 stripped
@@ -1217,6 +1234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
+        type: 3}
+      propertyPath: m_Name
+      value: bookshelf
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: c5e796d5dcdd03e4889bd61550a13ca5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1271,11 +1293,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: c5e796d5dcdd03e4889bd61550a13ca5,
-        type: 3}
-      propertyPath: m_Name
-      value: bookshelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5e796d5dcdd03e4889bd61550a13ca5, type: 3}
@@ -1367,6 +1384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 434ff3fd8d614764f8f39ec15f651e17,
+        type: 3}
+      propertyPath: m_Name
+      value: work_desk_03
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 434ff3fd8d614764f8f39ec15f651e17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1421,11 +1443,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 434ff3fd8d614764f8f39ec15f651e17,
-        type: 3}
-      propertyPath: m_Name
-      value: work_desk_03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 434ff3fd8d614764f8f39ec15f651e17, type: 3}
@@ -1742,6 +1759,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 694807da9c3524a409e7c9e4c34f8573,
+        type: 3}
+      propertyPath: m_Name
+      value: small_chair_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 694807da9c3524a409e7c9e4c34f8573,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1796,11 +1818,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 694807da9c3524a409e7c9e4c34f8573,
-        type: 3}
-      propertyPath: m_Name
-      value: small_chair_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694807da9c3524a409e7c9e4c34f8573, type: 3}
@@ -1892,6 +1909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 088ba6f77cb189040b76b13302353d02,
+        type: 3}
+      propertyPath: m_Name
+      value: small_chair_07
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 088ba6f77cb189040b76b13302353d02,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1947,11 +1969,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 088ba6f77cb189040b76b13302353d02,
-        type: 3}
-      propertyPath: m_Name
-      value: small_chair_07
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 088ba6f77cb189040b76b13302353d02, type: 3}
 --- !u!4 &8095208685558939753 stripped
@@ -1967,6 +1984,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: ac9d7432201530d44abf0621f6423da1,
+        type: 3}
+      propertyPath: m_Name
+      value: bed_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: ac9d7432201530d44abf0621f6423da1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2021,11 +2043,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: ac9d7432201530d44abf0621f6423da1,
-        type: 3}
-      propertyPath: m_Name
-      value: bed_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9d7432201530d44abf0621f6423da1, type: 3}
@@ -2117,6 +2134,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 02573ac85feebfc47b5027bef688cf6c,
+        type: 3}
+      propertyPath: m_Name
+      value: end_table_02
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 02573ac85feebfc47b5027bef688cf6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2172,11 +2194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 02573ac85feebfc47b5027bef688cf6c,
-        type: 3}
-      propertyPath: m_Name
-      value: end_table_02
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02573ac85feebfc47b5027bef688cf6c, type: 3}
 --- !u!4 &6401912606151007271 stripped
@@ -2192,6 +2209,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 680ff579c1fd474418e85cfe0f817b71,
+        type: 3}
+      propertyPath: m_Name
+      value: aquarium-2
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 680ff579c1fd474418e85cfe0f817b71,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2246,11 +2268,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -34.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 680ff579c1fd474418e85cfe0f817b71,
-        type: 3}
-      propertyPath: m_Name
-      value: aquarium-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680ff579c1fd474418e85cfe0f817b71, type: 3}

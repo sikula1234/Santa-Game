@@ -54,8 +54,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
+  - component: {fileID: 8475836297884220747}
   m_Layer: 0
-  m_Name: Livingroom
+  m_Name: Livingroom 3
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -106,6 +107,22 @@ MonoBehaviour:
   rightEntrance: 1
   bottomEntrance: 1
   leftEntrance: 0
+--- !u!114 &8475836297884220747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229370432124177791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d07ce676d7afda4dabb3b0f7dd5e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &8913996744499439222
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,13 +10,14 @@ public class GameOverMenu : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
+        Debug.Log("Scene reloaded in order to RESTART.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ContinueGame()
     {
         Time.timeScale = 1f;
-        Debug.Log("Next level will load now.");
+        Debug.Log("Scene reloaded in order to CONTINUE.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

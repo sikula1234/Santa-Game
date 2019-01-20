@@ -11,14 +11,14 @@ public class NoiseMaker : MonoBehaviour
 	public float velocity;
 	public float radius;
 
-	CircleCollider2D circleCollider;
+	CapsuleCollider capsuleCollider;
 	SpriteRenderer sprite;
 
 
 	// Use this for initialization
 	void Start()
 	{
-		circleCollider = GetComponent<CircleCollider2D>();
+		capsuleCollider = GetComponent<CapsuleCollider>();
 		sprite = GetComponent<SpriteRenderer>();
 		timeLeft = 0;
 	}
@@ -41,7 +41,7 @@ public class NoiseMaker : MonoBehaviour
 			enlargementTime = 2 - (ratio); // Na zaklade velikosti kruhu zvoli rychlost, kterou se bude zvetsovat
 			timeLeft = enlargementTime;
 			transform.localScale = new Vector3(0f, 0f, 0f);
-			circleCollider.radius = 0f;
+			capsuleCollider.radius = 0f;
 		}
 
 		// Spocita radius a ujisti ze ze je > 0
@@ -53,7 +53,7 @@ public class NoiseMaker : MonoBehaviour
 
 		// Nastavi velikost collideru a objektu podle promenny radius
 		transform.localScale = new Vector3(radius, radius, 0f);
-		circleCollider.radius = radius;
+		capsuleCollider.radius = radius;
 
 		//Nastavi barvu a pruhlednost kruhu
 		if(velocity >= 4f)
@@ -67,7 +67,7 @@ public class NoiseMaker : MonoBehaviour
 		
 	}
 
-	private void OnTriggerEnter2D(Collider2D collision)
+	private void OnTriggerEnter(Collider collision)
 	{
 		if (collision.tag == "Mob")
 		{

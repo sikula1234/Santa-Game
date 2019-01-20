@@ -95,8 +95,9 @@ GameObject:
   - component: {fileID: 4861100873482281669}
   - component: {fileID: 47410351687492406}
   - component: {fileID: 551879185031644448}
+  - component: {fileID: 739876951071172671}
   m_Layer: 0
-  m_Name: Boy
+  m_Name: Mum
   m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,3 +270,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584902157378990}
   m_Mesh: {fileID: 0}
+--- !u!136 &739876951071172671
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584902157378990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

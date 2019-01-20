@@ -23,12 +23,12 @@ public class MusicControls : MonoBehaviour
     {
         if (paused == false)
         {
-            audioSource.volume /= 5;
+            audioSource.volume /= 4;
             paused = true;
         }
         else
         {
-            audioSource.volume *= 5;
+            audioSource.volume *= 4;
             paused = false;
         }
     }

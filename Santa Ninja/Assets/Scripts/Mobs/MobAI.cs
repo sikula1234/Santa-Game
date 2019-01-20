@@ -10,7 +10,7 @@ public class MobAI : MonoBehaviour
 	public float floatCekani2;
 	NavMeshAgent navMeshAgent;
 
-	bool mobIsWaiting;
+	public bool mobIsWaiting;
 	bool startMoving;
 
     // Start is called before the first frame update

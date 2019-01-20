@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1312888873}
   - component: {fileID: 1312888874}
+  - component: {fileID: 4976854113718381969}
+  - component: {fileID: 70781056942383727}
   m_Layer: 0
   m_Name: Mob Sprite
   m_TagString: Untagged
@@ -79,6 +81,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4976854113718381969
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312888872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2517655f3a956942a1d50d229abb700, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &70781056942383727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312888872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f7dbc974c143741b30e92a4e9d0300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobAI: {fileID: 7533403778348171038}
 --- !u!1 &1584902157378990
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +237,7 @@ MonoBehaviour:
   destinationRadius: 5
   floatCekani1: 1
   floatCekani2: 5
+  mobIsWaiting: 0
 --- !u!195 &4861100873482281669
 NavMeshAgent:
   m_ObjectHideFlags: 0

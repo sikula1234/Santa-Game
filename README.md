@@ -1,6 +1,9 @@
-# Santa-Game
+# Santa Ninja
+Vánoční hra s motivem vánoc.
 
-Základní motivy: stealth, americký Vánoce (krb, cookies, mlíko, věnce, mistletoe,...), jednoduchost, trochu crazy
+Cíl hry: Jakožto santa musíte doručit dárky v domě na svá místa před uplynutím času. Nesmíte se ovšem nechat chytit obyvateli tohoto domu.
+
+Základní motivy: rychlá, trochu šílená hra s motivem amerických Vánoc
 
 Game engine: Unity
 

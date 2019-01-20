@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
-  - component: {fileID: 6125680936393460313}
+  - component: {fileID: 5551768081119830075}
   m_Layer: 0
   m_Name: kitchen_02
   m_TagString: Untagged
@@ -113,7 +113,8 @@ MonoBehaviour:
   rightEntrance: 1
   bottomEntrance: 1
   leftEntrance: 1
---- !u!114 &6125680936393460313
+  isSpawnRoom: 0
+--- !u!114 &5551768081119830075
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2300,11 +2301,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 92d6a114abb518342a4956e70d740661,
-        type: 3}
-      propertyPath: m_Name
-      value: kitchen_unit_04
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 92d6a114abb518342a4956e70d740661,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2359,6 +2355,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 92d6a114abb518342a4956e70d740661,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchen_unit_04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d6a114abb518342a4956e70d740661, type: 3}

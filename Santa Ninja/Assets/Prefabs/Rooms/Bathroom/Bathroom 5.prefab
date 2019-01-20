@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
-  - component: {fileID: 7466758146955567801}
+  - component: {fileID: 1885792931613079860}
   m_Layer: 0
   m_Name: Bathroom 5
   m_TagString: Untagged
@@ -113,7 +113,8 @@ MonoBehaviour:
   rightEntrance: 1
   bottomEntrance: 1
   leftEntrance: 0
---- !u!114 &7466758146955567801
+  isSpawnRoom: 0
+--- !u!114 &1885792931613079860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1011,10 +1012,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -1058,6 +1055,10 @@ PrefabInstance:
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
@@ -1224,10 +1225,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -1272,6 +1269,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
 --- !u!4 &1895906132967506611 stripped
@@ -1287,11 +1288,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
-        type: 3}
-      propertyPath: m_Name
-      value: shower
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1346,6 +1342,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: b2f0934054bfb1f4b85bc11ae70e6a04,
+        type: 3}
+      propertyPath: m_Name
+      value: shower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f0934054bfb1f4b85bc11ae70e6a04, type: 3}
@@ -1512,10 +1513,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -1559,6 +1556,10 @@ PrefabInstance:
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
@@ -1650,11 +1651,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4731416554372704895, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
-        type: 3}
-      propertyPath: m_Name
-      value: rug-small-1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5633108106370492047, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,6 +1716,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 4731416554372704895, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
+        type: 3}
+      propertyPath: m_Name
+      value: rug-small-1 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d18ec90c3bf27a4d830ad881159fbdd, type: 3}
 --- !u!4 &8941508869927199893 stripped
@@ -1735,11 +1736,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
-        type: 3}
-      propertyPath: m_Name
-      value: washbasin
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1804,6 +1800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
+        type: 3}
+      propertyPath: m_Name
+      value: washbasin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773780cf10df9614e8cbe5ed2aff2d0d, type: 3}
@@ -1905,11 +1906,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4731416554372704895, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
-        type: 3}
-      propertyPath: m_Name
-      value: rug-small-1
-      objectReference: {fileID: 0}
     - target: {fileID: 5633108106370492047, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1964,6 +1960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4731416554372704895, guid: 4d18ec90c3bf27a4d830ad881159fbdd,
+        type: 3}
+      propertyPath: m_Name
+      value: rug-small-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d18ec90c3bf27a4d830ad881159fbdd, type: 3}
@@ -2055,10 +2056,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2103,6 +2100,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
 --- !u!4 &6216907235509841953 stripped
@@ -2118,10 +2119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2166,6 +2163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
 --- !u!4 &6396692770429437348 stripped
@@ -2181,11 +2182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 5616175814407733580, guid: fae0b4908fea0764997d0aa6f956b6bc,
-        type: 3}
-      propertyPath: m_Name
-      value: towel-hanger
-      objectReference: {fileID: 0}
     - target: {fileID: 4034694587226946596, guid: fae0b4908fea0764997d0aa6f956b6bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2241,6 +2237,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 5616175814407733580, guid: fae0b4908fea0764997d0aa6f956b6bc,
+        type: 3}
+      propertyPath: m_Name
+      value: towel-hanger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae0b4908fea0764997d0aa6f956b6bc, type: 3}
 --- !u!4 &7580960502452550581 stripped
@@ -2256,10 +2257,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -2304,6 +2301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
 --- !u!4 &7091925774249190038 stripped
@@ -2319,10 +2320,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
-      propertyPath: m_Name
-      value: Tile (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2366,6 +2363,10 @@ PrefabInstance:
     - target: {fileID: 4970114870219634, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418312792112948, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}
+      propertyPath: m_Name
+      value: Tile (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af9d71b61ac20b8448d3f62ba9969831, type: 3}

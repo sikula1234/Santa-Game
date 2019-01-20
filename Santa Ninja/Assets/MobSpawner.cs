@@ -1,107 +1,75 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class MobSpawner : MonoBehaviour
 {
     public GameObject[] mobPrefabs;
-    public GameObject[] mobs;
-    public List<Vector2> spawnCoordinates = new List<Vector2>();
     public int pocetMobu = 6;
-    public LayerMask layer;
 
-	// Is called by LevelGen after level generation is complete
-	public void SpawnMobs()
+	public Transform[] roomArray;
+	public List<Transform> rooms = new List<Transform>();
+
+	private void Start()
 	{
-		//GenerateCoordinates();
-
-		mobs = new GameObject[pocetMobu]; //makes sure they match length
-		for (int i = 0; i < mobs.Length; i++)
-		{
-			int rand = Random.Range(0, mobPrefabs.Length);
-			mobs[i] = Instantiate(mobPrefabs[rand]) as GameObject;
-			mobs[i].transform.position = GetRandomLocation();
-
-		}
-		/*
-		for (int i = 0; i < mobs.Length; i++)
-		{
-			mobs[i].transform.position = spawnCoordinates[i];
-			//mobs[i].transform.position = new Vector3(spawnCoordinates[i].x, spawnCoordinates[i].y, -2f);
-		} */
+		CopyArray();
 	}
 
-	void GenerateCoordinates()
-    {
-        for (int i = 0; i < pocetMobu; i++)
-        {
-            while (true)
-            {
-                int a = Random.Range(2, 39);
-                int b = Random.Range(2, 39);
-                Vector2 coordinate = new Vector2(a, b);
-                if(IsSuitable(coordinate, spawnCoordinates))
-                {
-                    spawnCoordinates.Add(coordinate);
-                    break;
-                }
-            }
-            
-        }
-    }
-
-    bool IsSuitable(Vector2 coordinate, List<Vector2> usedCoordinates)
-    {
-        for (int i = 0; i < usedCoordinates.Count; i++)
-        {
-            if ((Mathf.Abs(coordinate.x - usedCoordinates[i].x) > 2.5f && Mathf.Abs(coordinate.y - usedCoordinates[i].y) > 2.5f)
-                && !Physics2D.Raycast(coordinate, Vector3.up, 1, layer)
-                && !Physics2D.Raycast(coordinate, Vector3.down, 1, layer)
-                && !Physics2D.Raycast(coordinate, Vector3.left, 1, layer)
-                && !Physics2D.Raycast(coordinate, Vector3.right, 1, layer))
-            {
-                continue;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-
-	Vector3 GetRandomLocation()
+	//Je zavolana LevelGenem az se vygeneruje level
+	public void SpawnMobs()
 	{
-		NavMeshTriangulation navMeshData = NavMesh.CalculateTriangulation();
-
-		int maxIndices = navMeshData.indices.Length - 3;
-		// Pick the first indice of a random triangle in the nav mesh
-		int firstVertexSelected = Random.Range(0, maxIndices);
-		int secondVertexSelected = Random.Range(0, maxIndices);
-		//Spawn on Verticies
-		Vector3 point = navMeshData.vertices[navMeshData.indices[firstVertexSelected]];
-
-		Vector3 firstVertexPosition = navMeshData.vertices[navMeshData.indices[firstVertexSelected]];
-		Vector3 secondVertexPosition = navMeshData.vertices[navMeshData.indices[secondVertexSelected]];
-		//Eliminate points that share a similar X or Z position to stop spawining in square grid line formations
-		if ((int)firstVertexPosition.x == (int)secondVertexPosition.x ||
-			(int)firstVertexPosition.z == (int)secondVertexPosition.z
-			)
+		for (int i = 0; i < pocetMobu; i++)
 		{
-			point = GetRandomLocation(); //Re-Roll a position - I'm not happy with this recursion it could be better
-		}
-		else
-		{
-			// Select a random point on it
-			point = Vector3.Lerp(
-											firstVertexPosition,
-											secondVertexPosition, //[t + 1]],
-											Random.Range(0.05f, 0.95f) // Not using Random.value as clumps form around Verticies 
-										);
-		}
-		//Vector3.Lerp(point, navMeshData.vertices[navMeshData.indices[t + 2]], Random.value); //Made Obsolete
+			int rand = Random.Range(0, mobPrefabs.Length);		
 
-		return point;
+			Vector3 randomPosition = GenerateRandomPosition(ChooseRoom(), 5f);
+			GameObject mob = Instantiate(mobPrefabs[rand], randomPosition, Quaternion.identity);
+
+			mob.transform.GetComponent<MobAI>().StartMoving();
+		}
+	}
+
+	//Vymaze spawn room z listu, je zavolana SpawnRoomGenem pri generaci spawn roomu
+	public void RemoveSpawnRoom(int index)
+	{
+		//Debug.Log("Removing room: " + rooms[index]);
+		rooms.RemoveAt(index);
+	}
+
+	// Zkopci array do listu
+	void CopyArray()
+	{
+		for (int i = 0; i < roomArray.Length; i++)
+		{
+			rooms.Add(roomArray[i]);
+		}
+	}
+
+	//Vybere random mistnost co jeste nebyla vybrana
+	Transform ChooseRoom()
+	{
+		int rand = Random.Range(0, rooms.Count());
+		Transform room = rooms[rand];
+		rooms.RemoveAt(rand);
+		return room;
+	}
+
+	//Vybere v dane mistnosti random pozici na spawnuti
+	public Vector3 GenerateRandomPosition(Transform roomTransform, float radius)
+	{
+		while(true)
+		{
+			Vector3 randomDirection = Random.insideUnitSphere * radius;
+			randomDirection += roomTransform.position;
+			NavMeshHit hit;
+			Vector3 finalPosition = Vector3.zero;
+			if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
+			{
+				finalPosition = hit.position;
+				return finalPosition;
+			}			
+		}		
 	}
 }

@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
-  - component: {fileID: 7207115183161667260}
+  - component: {fileID: 7252737548628718526}
   m_Layer: 0
   m_Name: Bathroom 4
   m_TagString: Untagged
@@ -110,7 +110,8 @@ MonoBehaviour:
   rightEntrance: 1
   bottomEntrance: 0
   leftEntrance: 1
---- !u!114 &7207115183161667260
+  isSpawnRoom: 0
+--- !u!114 &7252737548628718526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1243,11 +1244,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
-        type: 3}
-      propertyPath: m_Name
-      value: washbasin
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1312,6 +1308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
+        type: 3}
+      propertyPath: m_Name
+      value: washbasin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773780cf10df9614e8cbe5ed2aff2d0d, type: 3}
@@ -1478,11 +1479,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
-        type: 3}
-      propertyPath: m_Name
-      value: washbasin (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1547,6 +1543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 773780cf10df9614e8cbe5ed2aff2d0d,
+        type: 3}
+      propertyPath: m_Name
+      value: washbasin (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773780cf10df9614e8cbe5ed2aff2d0d, type: 3}
@@ -2013,11 +2014,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 36d10aa9b114d464ea386f9b7257c565,
-        type: 3}
-      propertyPath: m_Name
-      value: big-plant
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 36d10aa9b114d464ea386f9b7257c565,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2072,6 +2068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 36d10aa9b114d464ea386f9b7257c565,
+        type: 3}
+      propertyPath: m_Name
+      value: big-plant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36d10aa9b114d464ea386f9b7257c565, type: 3}
@@ -2163,11 +2164,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 7870756004860318142, guid: da5c13ece92ce46438acf8379baa757a,
-        type: 3}
-      propertyPath: m_Name
-      value: chair-2
-      objectReference: {fileID: 0}
     - target: {fileID: 6499897973505204394, guid: da5c13ece92ce46438acf8379baa757a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2222,6 +2218,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870756004860318142, guid: da5c13ece92ce46438acf8379baa757a,
+        type: 3}
+      propertyPath: m_Name
+      value: chair-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da5c13ece92ce46438acf8379baa757a, type: 3}

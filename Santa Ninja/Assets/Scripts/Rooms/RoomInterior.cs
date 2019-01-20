@@ -12,6 +12,7 @@ public class RoomInterior : MonoBehaviour
 	public bool rightEntrance;
 	public bool bottomEntrance;
 	public bool leftEntrance;
+	public bool isSpawnRoom;
 
 	private void Awake()
 	{

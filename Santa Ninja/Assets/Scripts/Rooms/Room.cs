@@ -34,12 +34,6 @@ public class Room : MonoBehaviour
 		Default, oneEntrance, oppositeEntrances, LEntrance, TEntrance, XEntrance
 	}
 
-	// Start is called before the first frame update
-	void Start()
-    {
-		
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -76,7 +70,7 @@ public class Room : MonoBehaviour
 			interiorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
 		} else
 		{
-			Debug.LogWarning("There is not a suitable room: " + roomType + ", " + roomEntranceType);
+			Debug.LogError("There is not a suitable room: " + roomType + ", " + roomEntranceType);
 		}	
 	}
 
@@ -105,7 +99,6 @@ public class Room : MonoBehaviour
 		newInteriorPrefab = Instantiate(newInteriorPrefab);
 		newInteriorPrefab.transform.parent = gameObject.transform;
 		newInteriorPrefab.transform.localPosition = new Vector3(0, 0, 0);
-		//newInteriorPrefab.GetComponent<RoomInterior>().GenerateInterior(roomEntranceType, roomEntrance);
 		newInteriorPrefab.GetComponent<SpawnRoom>().SpawnSanta(santaPrefab);
 	}
 }

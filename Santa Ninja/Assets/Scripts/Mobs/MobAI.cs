@@ -11,22 +11,30 @@ public class MobAI : MonoBehaviour
 	NavMeshAgent navMeshAgent;
 
 	bool mobIsWaiting;
+	bool startMoving;
 
     // Start is called before the first frame update
     void Start()
     {
-		navMeshAgent = transform.GetComponent<NavMeshAgent>();
-		MoveMob();
-    }
+		//navMeshAgent = transform.GetComponent<NavMeshAgent>();
+		//MoveMob(); // smazat
+	}
 
     // Update is called once per frame
     void Update()
     {
-        if(MobArrived() && !mobIsWaiting)
+        if(MobArrived() && !mobIsWaiting && startMoving) // 
 		{
 			StartCoroutine(WaitOnPoint());
 		}
     }
+
+	public void StartMoving()
+	{
+		navMeshAgent = transform.GetComponent<NavMeshAgent>();
+		startMoving = true;
+		MoveMob();		
+	}
 
 	Vector3 FindDestination()
 	{

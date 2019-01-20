@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
-  - component: {fileID: 7831174187952024196}
+  - component: {fileID: 5702514428842159862}
   m_Layer: 0
   m_Name: kitchen_03
   m_TagString: Untagged
@@ -113,7 +113,8 @@ MonoBehaviour:
   rightEntrance: 0
   bottomEntrance: 1
   leftEntrance: 1
---- !u!114 &7831174187952024196
+  isSpawnRoom: 0
+--- !u!114 &5702514428842159862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1015,6 +1016,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 1847640943745666501, guid: 4daea32cbde606e40b8c3be090fb5da7,
+        type: 3}
+      propertyPath: m_Name
+      value: small-chair-g1
+      objectReference: {fileID: 0}
     - target: {fileID: 5728326815476864539, guid: 4daea32cbde606e40b8c3be090fb5da7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1070,11 +1076,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
-    - target: {fileID: 1847640943745666501, guid: 4daea32cbde606e40b8c3be090fb5da7,
-        type: 3}
-      propertyPath: m_Name
-      value: small-chair-g1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4daea32cbde606e40b8c3be090fb5da7, type: 3}
 --- !u!4 &5556759511603961416 stripped
@@ -1090,6 +1091,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1145,11 +1151,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &6909775515997697107 stripped
@@ -1165,6 +1166,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: c82063286cb6bc64ca08e4da4b8cc739,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchen_unit_01
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: c82063286cb6bc64ca08e4da4b8cc739,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1220,11 +1226,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: c82063286cb6bc64ca08e4da4b8cc739,
-        type: 3}
-      propertyPath: m_Name
-      value: kitchen_unit_01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c82063286cb6bc64ca08e4da4b8cc739, type: 3}
 --- !u!4 &2774247730262029655 stripped
@@ -1240,6 +1241,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 1477696446690014941, guid: 85bb7dd11c54f194686a66d59c2bca6c,
+        type: 3}
+      propertyPath: m_Name
+      value: chair-e1 (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5116634580845423903, guid: 85bb7dd11c54f194686a66d59c2bca6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1295,11 +1301,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 225
       objectReference: {fileID: 0}
-    - target: {fileID: 1477696446690014941, guid: 85bb7dd11c54f194686a66d59c2bca6c,
-        type: 3}
-      propertyPath: m_Name
-      value: chair-e1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3655509049399419705, guid: 85bb7dd11c54f194686a66d59c2bca6c,
         type: 3}
       propertyPath: m_FlipX
@@ -1325,6 +1326,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,11 +1386,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint (5)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &7035006697382260753 stripped
@@ -1400,6 +1401,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: ad947f0ba1d346949ad68137046883f5,
+        type: 3}
+      propertyPath: m_Name
+      value: aquarium-1
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: ad947f0ba1d346949ad68137046883f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1455,11 +1461,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: ad947f0ba1d346949ad68137046883f5,
-        type: 3}
-      propertyPath: m_Name
-      value: aquarium-1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad947f0ba1d346949ad68137046883f5, type: 3}
 --- !u!4 &2114920856481285712 stripped
@@ -1475,6 +1476,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1530,11 +1536,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &1551962169592583120 stripped
@@ -1550,6 +1551,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 966743843076629659, guid: e5c8c1a71bd9f654bb47a24ca896a83c,
+        type: 3}
+      propertyPath: m_Name
+      value: fireplace
+      objectReference: {fileID: 0}
     - target: {fileID: 1419281046371998939, guid: e5c8c1a71bd9f654bb47a24ca896a83c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1605,11 +1611,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 966743843076629659, guid: e5c8c1a71bd9f654bb47a24ca896a83c,
-        type: 3}
-      propertyPath: m_Name
-      value: fireplace
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5c8c1a71bd9f654bb47a24ca896a83c, type: 3}
 --- !u!4 &6421215776526042962 stripped
@@ -1625,6 +1626,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 1477696446690014941, guid: 85bb7dd11c54f194686a66d59c2bca6c,
+        type: 3}
+      propertyPath: m_Name
+      value: chair-e1
+      objectReference: {fileID: 0}
     - target: {fileID: 5116634580845423903, guid: 85bb7dd11c54f194686a66d59c2bca6c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1680,11 +1686,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 1477696446690014941, guid: 85bb7dd11c54f194686a66d59c2bca6c,
-        type: 3}
-      propertyPath: m_Name
-      value: chair-e1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85bb7dd11c54f194686a66d59c2bca6c, type: 3}
 --- !u!4 &1704116509570128251 stripped
@@ -1700,6 +1701,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1755,11 +1761,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &692355956998090004 stripped
@@ -1775,6 +1776,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1830,11 +1836,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &791364814146149804 stripped
@@ -1850,6 +1851,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: ddbca8b33bb4ce14c955cdd920073da6,
+        type: 3}
+      propertyPath: m_Name
+      value: cooker
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: ddbca8b33bb4ce14c955cdd920073da6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1905,11 +1911,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: ddbca8b33bb4ce14c955cdd920073da6,
-        type: 3}
-      propertyPath: m_Name
-      value: cooker
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddbca8b33bb4ce14c955cdd920073da6, type: 3}
 --- !u!4 &8281634547056467284 stripped
@@ -1925,6 +1926,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 7a86570831e78e442b2c3310feb48e68,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchen_unit_05
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 7a86570831e78e442b2c3310feb48e68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1980,11 +1986,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 7a86570831e78e442b2c3310feb48e68,
-        type: 3}
-      propertyPath: m_Name
-      value: kitchen_unit_05
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a86570831e78e442b2c3310feb48e68, type: 3}
 --- !u!4 &5273512958162573982 stripped
@@ -2000,6 +2001,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 39424aa5311a4eb4988c6407ecb67d5e,
+        type: 3}
+      propertyPath: m_Name
+      value: fridge
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 39424aa5311a4eb4988c6407ecb67d5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2055,11 +2061,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 39424aa5311a4eb4988c6407ecb67d5e,
-        type: 3}
-      propertyPath: m_Name
-      value: fridge
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39424aa5311a4eb4988c6407ecb67d5e, type: 3}
 --- !u!4 &5265424406266385399 stripped
@@ -2075,6 +2076,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 7265020487825378312, guid: ec5ba96955635074699a2857dcd0528b,
+        type: 3}
+      propertyPath: m_Name
+      value: rug-c3
+      objectReference: {fileID: 0}
     - target: {fileID: 3536748419160869189, guid: ec5ba96955635074699a2857dcd0528b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2130,11 +2136,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7265020487825378312, guid: ec5ba96955635074699a2857dcd0528b,
-        type: 3}
-      propertyPath: m_Name
-      value: rug-c3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec5ba96955635074699a2857dcd0528b, type: 3}
 --- !u!4 &6506028704941869887 stripped
@@ -2150,6 +2151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: ca16995e1d83cf44586c0208ac46e7bd,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchen_unit_03
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: ca16995e1d83cf44586c0208ac46e7bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2204,11 +2210,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: ca16995e1d83cf44586c0208ac46e7bd,
-        type: 3}
-      propertyPath: m_Name
-      value: kitchen_unit_03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca16995e1d83cf44586c0208ac46e7bd, type: 3}
@@ -2300,6 +2301,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
+        type: 3}
+      propertyPath: m_Name
+      value: GiftSpawnPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5851291617233154922, guid: d690b6cc79269d84995cb32e28135522,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2355,11 +2361,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3867534398560747631, guid: d690b6cc79269d84995cb32e28135522,
-        type: 3}
-      propertyPath: m_Name
-      value: GiftSpawnPoint
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d690b6cc79269d84995cb32e28135522, type: 3}
 --- !u!4 &2989655486068077008 stripped
@@ -2375,6 +2376,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
+    - target: {fileID: 4978652822342567325, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
+        type: 3}
+      propertyPath: m_Name
+      value: big-lamp
+      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2429,11 +2435,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4978652822342567325, guid: 69c4292013a6cea4ea8b6ac869f5a7ce,
-        type: 3}
-      propertyPath: m_Name
-      value: big-lamp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69c4292013a6cea4ea8b6ac869f5a7ce, type: 3}

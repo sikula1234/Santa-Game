@@ -50,9 +50,22 @@ MonoBehaviour:
   - {fileID: 1584902157378990, guid: 072f371e0513fc7438a46197eab76c84, type: 3}
   - {fileID: 1584902157378990, guid: 3d8502b1c8bd5b44d9bbcf347ece2f8b, type: 3}
   - {fileID: 1584902157378990, guid: bfbaa503e2fffad4c8690300be1f8ea8, type: 3}
-  mobs: []
-  spawnCoordinates: []
   pocetMobu: 6
-  layer:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  roomArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  rooms: []

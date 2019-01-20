@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229370432124177790}
   - component: {fileID: 8306808011405374030}
-  - component: {fileID: 7194178186004056875}
+  - component: {fileID: 3504599953503013847}
   m_Layer: 0
   m_Name: kitchen_05
   m_TagString: Untagged
@@ -118,7 +118,8 @@ MonoBehaviour:
   rightEntrance: 0
   bottomEntrance: 0
   leftEntrance: 0
---- !u!114 &7194178186004056875
+  isSpawnRoom: 0
+--- !u!114 &3504599953503013847
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2070,11 +2071,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: 92d6a114abb518342a4956e70d740661,
-        type: 3}
-      propertyPath: m_Name
-      value: kitchen_unit_04
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: 92d6a114abb518342a4956e70d740661,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2129,6 +2125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: 92d6a114abb518342a4956e70d740661,
+        type: 3}
+      propertyPath: m_Name
+      value: kitchen_unit_04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d6a114abb518342a4956e70d740661, type: 3}
@@ -2520,11 +2521,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8229370432124177790}
     m_Modifications:
-    - target: {fileID: 4978652822342567325, guid: e7be07c6f172fdd4aa157721e78b1bb6,
-        type: 3}
-      propertyPath: m_Name
-      value: rubbishbin_02
-      objectReference: {fileID: 0}
     - target: {fileID: 2965022188610235756, guid: e7be07c6f172fdd4aa157721e78b1bb6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2579,6 +2575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978652822342567325, guid: e7be07c6f172fdd4aa157721e78b1bb6,
+        type: 3}
+      propertyPath: m_Name
+      value: rubbishbin_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7be07c6f172fdd4aa157721e78b1bb6, type: 3}

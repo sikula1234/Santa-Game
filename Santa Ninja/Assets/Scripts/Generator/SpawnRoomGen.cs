@@ -24,8 +24,35 @@ public class SpawnRoomGen : MonoBehaviour
 
 	public void SpawnRandomRoom()
 	{
-		Room randomSpawnRoom = spawnRooms[Random.Range(0, spawnRooms.Length)];
+		// Spawne mistnost
+		int randSpawnRoom = Random.Range(0, spawnRooms.Length);
+		Room randomSpawnRoom = spawnRooms[randSpawnRoom];
 		GameObject randomSpawnInteriorPrefab = spawnInteriorPrefabs[Random.Range(0, spawnInteriorPrefabs.Length)];
 		randomSpawnRoom.SetRoomInterior(randomSpawnInteriorPrefab, santaPrefab);
+
+		// Vymaze ji z MobSpawneru
+		MobSpawner mobSpawner = FindObjectOfType<MobSpawner>();
+
+		int spawnRoomIndex = 0;
+		switch(randSpawnRoom)
+		{
+			case 0:
+				spawnRoomIndex = 5;
+				break;
+			case 1:
+				spawnRoomIndex = 6;
+				break;
+			case 2:
+				spawnRoomIndex = 9;
+				break;
+			case 3:
+				spawnRoomIndex = 10;
+				break;
+			default:
+				Debug.Log("Neco tu nesedi!");
+				break;
+		}
+
+		mobSpawner.RemoveSpawnRoom(spawnRoomIndex);
 	}
 }

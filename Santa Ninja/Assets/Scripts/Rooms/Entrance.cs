@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Entrance : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class Entrance : MonoBehaviour
 
 		BoxCollider boxCollider = transform.GetComponent<BoxCollider>();
 		boxCollider.enabled = false;
+
+		NavMeshModifierVolume nav = transform.GetComponent<NavMeshModifierVolume>();
+		nav.enabled = false;
 
 		SpriteRenderer[] spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
 		for (int i = 0; i < spriteRenderers.Length; i++)

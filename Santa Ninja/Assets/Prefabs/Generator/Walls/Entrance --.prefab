@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 6915235530835462797}
   - component: {fileID: 2711482882557089653}
   - component: {fileID: 2575366120147074240}
+  - component: {fileID: 6176323687435710649}
   m_Layer: 16
   m_Name: Entrance --
   m_TagString: Untagged
@@ -110,6 +111,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 1, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6176323687435710649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522154450412934060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 3, y: 1, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!212 &6770563382910525149
 SpriteRenderer:
   m_ObjectHideFlags: 0

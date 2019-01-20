@@ -6,18 +6,6 @@ public class SpawnRoom : MonoBehaviour
 {
 	public Vector3 spawnLocation;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 	public void SpawnSanta(GameObject santaPrefab)
 	{
 		GameObject santa = Instantiate(santaPrefab);

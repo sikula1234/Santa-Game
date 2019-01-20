@@ -2,3 +2,4 @@
 
 - Seká se obrazovka
 - V hlavním menu je písmo moc malé
+- zvetsil bych JoyStick

@@ -2,4 +2,5 @@
 
 - Seká se obrazovka
 - V hlavním menu je písmo moc malé
+- Nefunguje talčítko Continue (hodí černou obrazovku, přestože by mělo reloadnout scénu)
 - zvetsil bych JoyStick

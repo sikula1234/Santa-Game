@@ -1,5 +1,7 @@
 Sem pište jakýkoliv nápady na featury (počeštěně “fičury”), motivy atd.:
 
+- Vypinac na zhasnuti svetla: rodina chvilku nevidí a Santa se jim tak může proplížit pod nosem
+- Mliko prida cas
 - každej paňáček může mít trochu jiný vlastnosti a zornej úhel, kupříkladu děda vidí jen na metr, syn sprintí 2x rychlejc než ostatní a táta nonstop sedí v obejváku
 - stromeček + punčochy viz Přehled
 - possible upgrady viz Přehled

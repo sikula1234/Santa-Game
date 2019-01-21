@@ -5,15 +5,21 @@ using UnityEngine;
 public class MusicControls : MonoBehaviour
 {
 
-    public AudioSource audioSource;
+    public AudioSource[] audioSources;
+    AudioSource chosenAudio;
     public bool paused;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        int rand = Random.Range(0, audioSources.Length);
+        chosenAudio = audioSources[rand];
+        chosenAudio.Play();
         paused = false;
     }
-
+    private void Awake()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,12 +29,12 @@ public class MusicControls : MonoBehaviour
     {
         if (paused == false)
         {
-            audioSource.volume /= 4;
+            chosenAudio.volume /= 4;
             paused = true;
         }
         else
         {
-            audioSource.volume *= 4;
+            chosenAudio.volume *= 4;
             paused = false;
         }
     }

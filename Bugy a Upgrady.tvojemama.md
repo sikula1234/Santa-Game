@@ -10,4 +10,6 @@
 - Obcas se bugne mob
 - Dodelat mistnosti na vsechny druhy
 - Otaceni mobu - pomaleji pri zastaveni
+- Jinou texturu fied of view
+- Spawnpoint vic ke krbu
 

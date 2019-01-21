@@ -12,4 +12,4 @@
 - Otaceni mobu - pomaleji pri zastaveni
 - Jinou texturu fied of view
 - Spawnpoint vic ke krbu
-
+- Opravit spawnpointy - aby se negenerovaly ve stejne mistnosti a na stejnych mistech

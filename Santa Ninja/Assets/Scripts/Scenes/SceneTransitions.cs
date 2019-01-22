@@ -15,6 +15,8 @@ public class SceneTransitions : MonoBehaviour
     public GameObject ButtonContinue;
 
     public GameObject gameoverMenuUI;
+    public MusicControls musicControls;
+    public AudioSource uLostSound;
 
     public void LoadScene(string sceneName)
 	{
@@ -42,6 +44,8 @@ public class SceneTransitions : MonoBehaviour
 			case 0: // Spotted
                 MessageSpotted.SetActive(true);
                 ButtonRetry.SetActive(true);
+                musicControls.chosenAudio.Stop();
+                //uLostSound.Play();
                 text.text = "You have been spotted!";
                 break;
 			case 1: // Time

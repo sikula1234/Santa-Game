@@ -17,5 +17,6 @@ public class Santa : MonoBehaviour {
 	public void Die()
 	{
 		sceneTransitions.LoadScene("TestLevel", 0);
+        Debug.Log("Nazdar");
 	}
 }

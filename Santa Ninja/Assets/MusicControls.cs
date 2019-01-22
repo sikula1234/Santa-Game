@@ -6,7 +6,7 @@ public class MusicControls : MonoBehaviour
 {
 
     public AudioSource[] audioSources;
-    AudioSource chosenAudio;
+    public AudioSource chosenAudio;
     public bool paused;
     // Start is called before the first frame update
     void Start()

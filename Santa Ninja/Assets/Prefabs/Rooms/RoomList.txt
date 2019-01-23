@@ -1,9 +1,9 @@
 Bathroom:
-Q shape: 0/2
-= shape: 0/2
-L shape: 0/3
-T shape: 0/3
-X shape: 0/1
+Q shape: 2/2
+= shape: 2/2
+L shape: 3/3
+T shape: 3/3
+X shape: 1/1
 
 Bedroom:
 Q shape: 0/2
@@ -13,17 +13,17 @@ T shape: 0/3
 X shape: 0/1
 
 Hall
-Q shape: 0/2
+Q shape: 1/2
 = shape: 0/2
 L shape: 0/3
 T shape: 0/3
 X shape: 0/1
 
 Kitchen
-Q shape: 0/2
+Q shape: 2/2
 = shape: 0/2
-L shape: 0/3
-T shape: 0/3
+L shape: 2/3
+T shape: 2/3
 X shape: 0/1
 
 Livingroom:

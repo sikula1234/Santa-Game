@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnRoomGen : MonoBehaviour
-{
+{	
 	public GameObject santaPrefab;
+	public Room randomSpawnRoom;
 
 	public GameObject[] spawnInteriorPrefabs;
 	public Room[] spawnRooms;
@@ -26,7 +27,7 @@ public class SpawnRoomGen : MonoBehaviour
 	{
 		// Spawne mistnost
 		int randSpawnRoom = Random.Range(0, spawnRooms.Length);
-		Room randomSpawnRoom = spawnRooms[randSpawnRoom];
+		randomSpawnRoom = spawnRooms[randSpawnRoom];
 		GameObject randomSpawnInteriorPrefab = spawnInteriorPrefabs[Random.Range(0, spawnInteriorPrefabs.Length)];
 		randomSpawnRoom.SetRoomInterior(randomSpawnInteriorPrefab, santaPrefab);
 

@@ -38,10 +38,11 @@ public class Room : MonoBehaviour
     void Update()
     {
 		//Pro Testovani - pak smazat
+		/*
 		if (!isDiscovered)
 		{
 			tilemap.color = new Color(0, 0, 0);
-		} else tilemap.color = new Color(255, 255, 255);
+		} else tilemap.color = new Color(255, 255, 255);*/
 
 	}
 

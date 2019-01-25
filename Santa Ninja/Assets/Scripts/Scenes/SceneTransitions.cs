@@ -62,7 +62,7 @@ public class SceneTransitions : MonoBehaviour
 		/* transitionAnimator.SetTrigger("text");
 		transitionAnimator.SetTrigger("fade_out"); */
 		yield return new WaitForSeconds(0f);
-        gameoverMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+		//Time.timeScale = 0f;
+		gameoverMenuUI.SetActive(true);       
     }
 }

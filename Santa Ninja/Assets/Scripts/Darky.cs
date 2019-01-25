@@ -7,7 +7,7 @@ using System.Threading;
 public class Darky : MonoBehaviour  {
 
     public int giftsStart = 3;
-	[HideInInspector]
+	//[HideInInspector]
     public int actualNumberOfGifts;
     public Text giftsCounter;
 

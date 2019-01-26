@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnRoomGen : MonoBehaviour
+public class SpawnRoomGen2 : MonoBehaviour
 {	
 	public GameObject santaPrefab;
 	public Room randomSpawnRoom;
@@ -34,32 +34,27 @@ public class SpawnRoomGen : MonoBehaviour
 		// Vymaze ji z MobSpawneru
 		MobSpawner mobSpawner = FindObjectOfType<MobSpawner>();
 
+		/*
 		int spawnRoomIndex = 0;
-		if(FindObjectOfType<GameManager>().levelSize == 3)
+		switch(randSpawnRoom)
 		{
-			spawnRoomIndex = randSpawnRoom;
-		} else
-		{
-			switch (randSpawnRoom)
-			{
-				case 0:
-					spawnRoomIndex = 5;
-					break;
-				case 1:
-					spawnRoomIndex = 6;
-					break;
-				case 2:
-					spawnRoomIndex = 9;
-					break;
-				case 3:
-					spawnRoomIndex = 10;
-					break;
-				default:
-					Debug.Log("Neco tu nesedi!");
-					break;
-			}
-		}
-
+			case 0:
+				spawnRoomIndex = 5;
+				break;
+			case 1:
+				spawnRoomIndex = 6;
+				break;
+			case 2:
+				spawnRoomIndex = 9;
+				break;
+			case 3:
+				spawnRoomIndex = 10;
+				break;
+			default:
+				Debug.Log("Neco tu nesedi!");
+				break;
+		} */
+		int spawnRoomIndex = randSpawnRoom;
 
 		mobSpawner.RemoveSpawnRoom(spawnRoomIndex);
 	}

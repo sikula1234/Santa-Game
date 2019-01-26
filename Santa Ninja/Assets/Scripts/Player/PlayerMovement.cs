@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour {
 	Rigidbody santaRigidBody;
 	Vector3 lastLook = new Vector3(0, 0, 4000);
 
-	// Use this for initialization
-	void Start()
+    // Use this for initialization
+    void Start()
 	{
 		joystick = FindObjectOfType<Joystick>();
 		santaRigidBody = GetComponent<Rigidbody>();

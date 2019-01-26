@@ -24,6 +24,8 @@ public class Entrance : MonoBehaviour
 	{
 		isOpen = true;
 
+		gameObject.layer = 0;
+
 		BoxCollider boxCollider = transform.GetComponent<BoxCollider>();
 		boxCollider.enabled = false;
 

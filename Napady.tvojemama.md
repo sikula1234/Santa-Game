@@ -1,5 +1,11 @@
 Sem pište jakýkoliv nápady na featury (počeštěně “fičury”), motivy atd.:
 
+- Do shopu - clovek si muze koupit peta, ktery bude mit ruzny efekty na gameplay (najit treasure, knockoutnout cloveka..)
+- Loading levelu v pozadi zatim co se vypisuje score predchoziho levelu (aby clovek nemusel cekat na loading)
+- Animace pred zacatkem hry jak santa leti nad barakem v sanich.
+- Do shopu upgrady a skilly (upgrady ovlivni cely level - vic penez atd., skilly bude moct clovek tlacitkem pouzit)
+- Do shopu moznost koupit si skin (napad - za santou bude vlat kape) a barvu
+- Do shopu pridat moznost koupit si trail - stopy, zlaty trail
 - Vypinac na zhasnuti svetla: rodina chvilku nevidí a Santa se jim tak může proplížit pod nosem
 - Mliko prida cas
 - každej paňáček může mít trochu jiný vlastnosti a zornej úhel, kupříkladu děda vidí jen na metr, syn sprintí 2x rychlejc než ostatní a táta nonstop sedí v obejváku

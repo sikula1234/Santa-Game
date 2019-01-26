@@ -12,6 +12,7 @@ public class SpawnRoom : MonoBehaviour
 		santa.transform.parent = gameObject.transform;
 		santa.transform.localPosition = spawnLocation;
 		santa.transform.parent = null;
+		santa.transform.position += new Vector3(0, 1.5f, 0);
 	}
 
 	void OnDrawGizmosSelected()

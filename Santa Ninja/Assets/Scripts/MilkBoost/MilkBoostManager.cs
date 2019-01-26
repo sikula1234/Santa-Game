@@ -16,8 +16,8 @@ public class MilkBoostManager : MonoBehaviour
     void Update()
     {
         if (isMilkBoosted)
-        {
-            milkBoostUI.SetActive(true);
+        {			
+            milkBoostUI.SetActive(true); 
         }
         else
         {

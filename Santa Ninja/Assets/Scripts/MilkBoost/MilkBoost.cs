@@ -20,13 +20,14 @@ public class MilkBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player" && !milkBoostManager.isMilkBoosted)
-        {
+        if (collision.tag == "Player")//&& !milkBoostManager.isMilkBoosted
+		{
             Countdown timeLeft = FindObjectOfType<Countdown>();
             timeLeft.timeLeft += 20;
 
-            MilkBoostManager milkBoostManager = FindObjectOfType<MilkBoostManager>();
-            milkBoostManager.isMilkBoosted = true;
+			// Vypnul jsem to, nejspis nebudem potrebovat milk UI -Morcinus
+			//MilkBoostManager milkBoostManager = FindObjectOfType<MilkBoostManager>();
+            //milkBoostManager.isMilkBoosted = true;
             
             Destroy(gameObject);
         }

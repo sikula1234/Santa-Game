@@ -23,7 +23,7 @@ public class Boost : MonoBehaviour
         if (collision.tag == "Player" && !boostManager.isBoosted)
         {
             PlayerMovement santaPlayerMovement = FindObjectOfType<PlayerMovement>();
-            santaPlayerMovement.movementSpeed *= 2;
+            santaPlayerMovement.movementSpeed = 5f;
             BoostManager boostManager = FindObjectOfType<BoostManager>();
             boostManager.isBoosted = true;
             SoundControls soundControls = FindObjectOfType<SoundControls>();

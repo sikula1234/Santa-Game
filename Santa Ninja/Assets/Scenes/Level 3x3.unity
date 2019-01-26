@@ -3902,11 +3902,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3358254186728784053, guid: 04f2da715b3ce6042889d1f0169ad29b,
         type: 3}
-      propertyPath: mobPrefabs.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3358254186728784053, guid: 04f2da715b3ce6042889d1f0169ad29b,
-        type: 3}
       propertyPath: roomArray.Array.data[0]
       value: 
       objectReference: {fileID: 8229370433476227911}
@@ -3984,6 +3979,11 @@ PrefabInstance:
         type: 3}
       propertyPath: roomArray.Array.data[15]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358254186728784053, guid: 04f2da715b3ce6042889d1f0169ad29b,
+        type: 3}
+      propertyPath: pocetMobu
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f2da715b3ce6042889d1f0169ad29b, type: 3}

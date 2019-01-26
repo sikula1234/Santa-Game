@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BoostTimer : MonoBehaviour
 {
-
     public int boostTimeLeft = 10;
     public bool timeToCountdown = false;
     // Start is called before the first frame update
@@ -29,7 +28,7 @@ public class BoostTimer : MonoBehaviour
             boostTimeLeft--;
         }
         PlayerMovement santaPlayerMovement = FindObjectOfType<PlayerMovement>();
-        santaPlayerMovement.movementSpeed /= 2;
+        santaPlayerMovement.movementSpeed = 2.5f;
         BoostManager boostManager = GetComponent<BoostManager>();
         boostManager.isBoosted = false;
         boostTimeLeft = 10;

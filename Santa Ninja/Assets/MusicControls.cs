@@ -27,12 +27,12 @@ public class MusicControls : MonoBehaviour
     }
     public void PauseMusic()
     {
-        if (paused == false)
+        if (Time.timeScale == 0f && !paused)
         {
             chosenAudio.volume /= 4;
             paused = true;
         }
-        else
+        else if (Time.timeScale != 0f)
         {
             chosenAudio.volume *= 4;
             paused = false;

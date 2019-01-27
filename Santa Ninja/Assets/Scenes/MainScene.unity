@@ -11219,5 +11219,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2919028489986132554, guid: 68c250af74d9ede4f9f18373bdadc04c,
+        type: 3}
+      propertyPath: milkBoostPrefab
+      value: 
+      objectReference: {fileID: 8340221709612713378, guid: 4f7864f6dc0796945a7efafaba13b404,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68c250af74d9ede4f9f18373bdadc04c, type: 3}

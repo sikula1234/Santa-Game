@@ -6,7 +6,7 @@ public class GiftSpawner : MonoBehaviour
 {
 	public GameObject giftPrefab;
 	public GameObject boostPrefab;
-    //public GameObject milkBoostPrefab;
+    public GameObject milkBoostPrefab;
 	public int giftsToSpawn = 3;
 	public int boostsToSpawn = 3;
 
@@ -43,7 +43,7 @@ public class GiftSpawner : MonoBehaviour
 		for (int i = 0; i < boostsToSpawn; i++)
 		{
 			GameObject boost = Instantiate(boostPrefab);
-            //GameObject milkBoost = Instantiate(milkBoostPrefab);
+            GameObject milkBoost = Instantiate(milkBoostPrefab);
 
 			bool havePosition = false;
 			int randomIndex = 0;
@@ -61,16 +61,14 @@ public class GiftSpawner : MonoBehaviour
 				}				
 			}
             int randomBoost;
-            randomBoost = Random.Range(0, 1);
+            randomBoost = Random.Range(0, 2);
             if (randomBoost == 0)
             {
                 boost.transform.position = giftSpawnPoints[randomIndex].transform.position;
             }
             else
             {
-                /*pak se to musi vymenit, az bude fungovat ten milkBoost
-                milkBoost.transform.position = giftSpawnPoints[randomIndex].transform.position;*/
-                boost.transform.position = giftSpawnPoints[randomIndex].transform.position;
+                milkBoost.transform.position = giftSpawnPoints[randomIndex].transform.position;
             }
 		}
 	}

@@ -61,7 +61,7 @@ public class GiftSpawner : MonoBehaviour
 				}				
 			}
             int randomBoost;
-            randomBoost = Random.Range(0, 1);
+            randomBoost = Random.Range(0, 2);
             if (randomBoost == 0)
             {
                 boost.transform.position = giftSpawnPoints[randomIndex].transform.position;
